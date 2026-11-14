@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "docs/atlas/knowledge-catalog.json"
 SOURCES = ROOT / "resources/authorities.json"
 SCENARIOS = ROOT / "docs/scenarios/scenarios.json"
+COVERAGE = ROOT / "docs/quality/coverage-matrix.json"
 UPSTREAM = ROOT / "resources/upstream-pm-knowledge-index.json"
 
 def read():
@@ -47,8 +48,32 @@ def check():
             errs.append("No scenario document: " + s["id"])
         for t in s["topics"]:
             if t not in by_id: errs.append("Unknown scenario topic: " + t)
-    if len(topics) < 50 or len(sources) < 18 or len(scenarios) < 5:
-        errs.append("Coverage below minimum documented curriculum scope")
+    if len(topics) < 102 or len(sources) < 57 or len(scenarios) < 5:
+        errs.append("Coverage below V4 audited baseline")
+    domains = json.loads(COVERAGE.read_text(encoding="utf-8"))["domains"]
+    if len(domains) < 18:
+        errs.append("Missing PM foundation domains")
+    mapped = set()
+    for domain in domains:
+        if not domain.get("topic_ids") or not domain.get("acceptance"):
+            errs.append("Incomplete domain: " + domain.get("id", "?"))
+        for tid in domain.get("topic_ids", []):
+            if tid not in by_id:
+                errs.append("Unknown coverage topic: " + tid)
+            mapped.add(tid)
+    for tid in by_id.keys() - mapped:
+        errs.append("Unmapped competency topic: " + tid)
+    by_url = {}
+    for item in sources:
+        url = item.get("url", "")
+        if not url.startswith("https://"):
+            errs.append("Invalid source URL: " + item["id"])
+        canonical = item.get("alias_of")
+        if canonical and (canonical not in src or src[canonical]["url"] != url):
+            errs.append("Invalid source alias: " + item["id"])
+        if url in by_url and canonical != by_url[url]:
+            errs.append("Duplicate source URL without canonical alias: " + item["id"])
+        by_url.setdefault(url, item["id"])
     return errs, topics, sources, scenarios
 
 def route(key, deep=False):
@@ -95,11 +120,11 @@ def main(argv=None):
     errs, topics, sources, scenarios=check()
     if errs: print("\n".join(errs),file=sys.stderr); return 2
     if a.command=="validate":
-        print(f"OK: {len(topics)} nodes, {len(sources)} sources, {len(scenarios)} scenarios; no dangling IDs/cycles")
+        print(f"OK: {len(topics)} nodes, {len(sources)} references, {len(scenarios)} scenarios; complete competency coverage, source aliases and dependencies validated")
     elif a.command=="list":
         for t in topics: print(t["id"],t["domain"],t["name"],"=>",t["trigger"])
     elif a.command=="search":
-        q=a.text.casefold(); m=[t for t in topics if q in " ".join([t["id"],t["name"],t["why"],t["trigger"],t["exercise"]]).casefold()]
+        q=a.text.casefold(); m=[t for t in topics if q in " ".join([t["id"],t["name"],t["why"],t["trigger"],t["exercise"],t.get("plain",""),t.get("definition","")]).casefold()]
         for t in m: print(t["id"], t["name"], "->", t["trigger"])
         if not m: print("No match; check full Atlas or adjust keyword")
     elif a.command=="route":

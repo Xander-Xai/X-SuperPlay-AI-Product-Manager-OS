@@ -11,7 +11,8 @@
         "PM16",
         "PM18",
         "PM28",
-        "PM29"
+        "PM29",
+        "PM23"
       ],
       "acceptance": "区分PM/PO/项目经理/工程与DoD责任",
       "status": "INDEXED_NOT_HUMAN_VERIFIED"
@@ -63,7 +64,9 @@
         "PM08",
         "PM20",
         "PM32",
-        "ETH01"
+        "ETH01",
+        "PM09",
+        "ENG13"
       ],
       "acceptance": "可测PRD+代表性任务+无障碍",
       "status": "INDEXED_NOT_HUMAN_VERIFIED"
@@ -90,7 +93,8 @@
         "DATA02",
         "DATA04",
         "DATA05",
-        "DATA07"
+        "DATA07",
+        "PM15"
       ],
       "acceptance": "完整数据口径与任务价值",
       "status": "INDEXED_NOT_HUMAN_VERIFIED"
@@ -115,7 +119,9 @@
         "BIZ06",
         "BIZ08",
         "BIZ09",
-        "BIZ13"
+        "BIZ13",
+        "BIZ03",
+        "BIZ12"
       ],
       "acceptance": "买家行为与真实/合成收入分离",
       "status": "INDEXED_NOT_HUMAN_VERIFIED"
@@ -204,7 +210,12 @@
         "ENG07",
         "ENG09",
         "ENG10",
-        "ENG12"
+        "ENG12",
+        "ENG05",
+        "ENG08",
+        "ENG11",
+        "ENG14",
+        "PM21"
       ],
       "acceptance": "真实产品纵切与安全边界",
       "status": "INDEXED_NOT_HUMAN_VERIFIED"

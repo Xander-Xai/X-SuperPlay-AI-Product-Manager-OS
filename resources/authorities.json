@@ -68,10 +68,10 @@
     },
     {
       "id": "S08",
-      "area": "Web 安全风险",
-      "title": "OWASP Top 10:2025",
+      "area": "Web应用安全（非LLM安全）",
+      "title": "OWASP Top 10:2025 (Web Application Security)",
       "url": "https://top10.owasp.org/2025/0x00_2025-Introduction/",
-      "quality": "行业安全项目",
+      "quality": "行业安全项目；LLM 安全需看专门的 S56 清单",
       "checked_on": "2026-11-14",
       "status": "PAGE_REVIEWED_NOT_EXECUTED"
     },
@@ -425,9 +425,10 @@
       "area": "Scrum Product Owner 规范",
       "title": "Official Scrum Guide 2020",
       "url": "https://scrumguides.org/scrum-guide.html?lang=en",
-      "quality": "Scrum 唯一官方职责、工件和承诺定义（2026-11 查仍为2020官方版）",
+      "quality": "Scrum 唯一官方职责、工件和承诺定义（2026-11 查仍为2020官方版）；与 S32 同一 URL",
       "checked_on": "2026-11-14",
-      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+      "status": "ALIAS_USE_CANONICAL",
+      "alias_of": "S32"
     },
     {
       "id": "S48",
