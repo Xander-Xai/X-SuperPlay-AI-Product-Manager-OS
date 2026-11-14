@@ -15,7 +15,7 @@
 | 看完整知识结构、作用与先修逻辑 | [ROADMAP：全景知识路线](ROADMAP.md) / [知识图谱](docs/atlas/knowledge-graph.md) |
 | 卡在一个问题，直接查学什么 | [需求驱动 Router](docs/learning/demand-router.md) / `python tools/learning_router.py search "越权"` |
 | 找到具体权威资料与可执行实操 | [知识卡手册](docs/atlas/knowledge-handbook.md) / [官方资料索引](resources/official-resources.md) |
-| 想证明学完能做真正可运营的产品 | [上线 Gate](docs/launch/production-readiness.md) / [场景矩阵](docs/scenarios/README.md) |
+| 想证明学完能做真正可运营的产品 | [上线 Gate](docs/launch/production-readiness.md) / [E1–E8 生产实训](docs/launch/production-apprenticeship.md) / [场景矩阵](docs/scenarios/README.md) |
 
 ## PM / PE 双主线
 

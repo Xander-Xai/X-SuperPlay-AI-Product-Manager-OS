@@ -7,7 +7,7 @@
 
 1. **知识全景 Atlas**：回答「这个知识解决什么、和哪些知识存在逻辑依赖、为何必须懂？」→ [图谱解释](docs/atlas/knowledge-graph.md) / [机器可读知识卡](docs/atlas/knowledge-catalog.json) / [逐主题实操指南](docs/atlas/knowledge-handbook.md)。
 2. **需求驱动 Router**：回答「今天卡在哪、最低要学什么？」→ [触发矩阵](docs/learning/demand-router.md)、[命令行路由](tools/learning_router.py)、[学习任务契约](docs/learning/task-contract.md)。
-3. **真实上线 Gate**：回答「学完能否开发、部署、测试、运营？」→ [生产门禁](docs/launch/production-readiness.md)、[迁移决策](docs/launch/architecture-evolution.md)、[场景练习](docs/scenarios/README.md)。
+3. **真实上线 Gate**：回答「学完能否开发、部署、测试、运营？」→ [生产门禁](docs/launch/production-readiness.md)、[生产交付 E1–E8 实训](docs/launch/production-apprenticeship.md)、[迁移决策](docs/launch/architecture-evolution.md)、[场景练习](docs/scenarios/README.md)。
 
 这三层互补：**知识覆盖要完整，执行按需求最小化；学习产物要能迁移到真实交付，但不要求每次学习都启动一个下游项目。**
 
