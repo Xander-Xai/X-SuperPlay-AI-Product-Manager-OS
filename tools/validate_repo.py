@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate local Markdown paths and curriculum entrypoints (stdlib only)."""
+"""Check curriculum entrypoints, Markdown relative links and obvious public safety gaps."""
 from pathlib import Path
 from urllib.parse import unquote
 import re
@@ -10,31 +10,42 @@ required = [
     "README.md", "ROADMAP.md", "GOVERNANCE.md",
     "05-AI-Product-Management/README.md",
     "09-Product-Engineering/README.md",
+    "09-Product-Engineering/roadmap.md",
     "09-Product-Engineering/30-60-90.md",
-    "12-Assessments/rubric.md", "resources/source-migration-map.md",
+    "09-Product-Engineering/lab-track.md",
+    "12-Assessments/rubric.md",
+    "resources/source-migration-map.md",
 ]
 errors = []
 for name in required:
     if not (ROOT / name).is_file():
-        errors.append("Missing required path: " + name)
+        errors.append("Missing: " + name)
 
-markdown = list(ROOT.rglob("*.md"))
-link_re = re.compile(r"!?(?:\\[[^\\]]*\\])\\(([^)]+)\\)")
-for file in markdown:
-    contents = file.read_text(encoding="utf-8")
-    for raw in link_re.findall(contents):
-        url = raw.strip().split(" ", 1)[0].strip("<>")
-        if url.startswith(("https://", "http://", "mailto:", "#")):
+# Match standard Markdown link targets, including image links; external URLs excluded below.
+link_re = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
+checked = 0
+for file in ROOT.rglob("*.md"):
+    content = file.read_text(encoding="utf-8")
+    for raw in link_re.findall(content):
+        target_text = raw.strip().split(" ", 1)[0].strip("<>")
+        if target_text.startswith(("https://", "http://", "mailto:", "#")):
             continue
-        local = unquote(url.split("#", 1)[0].split("?", 1)[0])
+        local = unquote(target_text.split("#", 1)[0].split("?", 1)[0])
         if not local:
             continue
+        checked += 1
         target = (file.parent / local).resolve()
-        if ROOT.resolve() not in target.parents and target != ROOT.resolve():
-            errors.append("Escaping path: " + str(file.relative_to(ROOT)) + " -> " + url)
-        elif not target.exists():
-            errors.append("Broken local link: " + str(file.relative_to(ROOT)) + " -> " + url)
+        try:
+            target.relative_to(ROOT.resolve())
+        except ValueError:
+            errors.append("Path escapes repo: " + str(file.relative_to(ROOT)) + " -> " + local)
+            continue
+        if not target.exists():
+            errors.append("Broken local link: " + str(file.relative_to(ROOT)) + " -> " + local)
+
+if checked < 25:
+    errors.append("Too few internal Markdown links examined: " + str(checked))
 if errors:
-    print("\\n".join(errors))
+    print("\n".join(errors))
     sys.exit(1)
-print("OK:", len(markdown), "markdown files; core entrypoints and local links")
+print(f"OK: {checked} local links checked; all key files and links exist")
