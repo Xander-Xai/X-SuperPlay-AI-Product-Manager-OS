@@ -1,6 +1,6 @@
 # AI Product Manager × AI Product Engineer：全景知识 Roadmap（需求驱动版）
 
-> **v0.3.0 · 2026-11-14 · CURRICULUM_DESIGNED / PRACTICE_NOT_RUN / HUMAN_UNASSESSED**  
+> **v0.4.0 · 2026-11-14 · CURRICULUM_DESIGNED / PRACTICE_NOT_RUN / HUMAN_UNASSESSED**  
 > **全景知识关系是稳定地图，不是强制学习顺序。学习顺序由实际问题、风险与缺口动态选择。** 12 周/30-60-90 天只作为可选复盘节奏，不再是先修关卡。
 
 ## 本轮 V3 拓展：从产品经理知识链到专业原理与大白话
@@ -9,7 +9,7 @@
 
 - [四张 Mermaid 产品链路/风险/知识依赖/按需学习图](docs/atlas/product-lifecycle-mermaid.md)
 - [专业术语 × 餐馆类比 × 何时使用（26 个核心概念）](docs/atlas/product-manager-primer.md)
-- [全景知识卡：新增 29 项，约 84 个知识节点](docs/atlas/knowledge-handbook.md)
+- [全景知识卡：覆盖已审计的基础领域，机器目录作为唯一节点清单](docs/atlas/knowledge-handbook.md)
 - [上游 22 组具体资料精确链接](resources/upstream-pm-knowledge-index.md) 与 [公共权威来源索引](resources/official-resources.md)
 - [AI 时代以点带面学习 SOP](docs/learning/point-to-system-method.md)
 - [8 道真实上线门禁与交付实训](docs/launch/production-apprenticeship.md)
@@ -28,6 +28,16 @@
 | 如何判断效果与改进 | Metrics / Experiments / Learning Loops | 看顾客是否回头，而不是只统计发了多少传单 | DATA01–DATA04、COG01–COG03 | [Atlassian](https://www.atlassian.com/agile/product-management/new-product-development-process) |
 
 **注意**：它们是相互影响的系统而不是严格从左到右的一次性阶段。用户需求改变，会同时影响设计、技术选型、价格、指标与运营；项目失败后反向学习需要的知识，而不是从第一章重来。
+
+---
+
+## 本轮 V4 基础覆盖和术语治理
+
+对照 SVPG、Scrum Guide、NN/g、Strategyzer、Amplitude、Statsig 等权威/作者/厂商资料，补齐市场测算、问卷抽样、研究同意、MVP/POC/原型、Product Backlog/DoD、VoC、激活、埋点口径、实验统计、PMF、客户 ROI、Product Ops 和 AI 在线质量等基础入口。
+
+**快速定位**：[18 领域覆盖矩阵与缺口审计](docs/quality/coverage-audit-20261114.md) · [本轮按需路由表](docs/learning/product-foundations-task-router.md) · [唯一术语与状态口径](docs/quality/terminology-contract.md) · [完整知识卡](docs/atlas/knowledge-handbook.md)。
+
+**学习顺序仍不强制**：知识地图作为全景，`requires` 是概念依赖，不是课程先后。正式上线的权限/隐私/安全门禁不能因你还没学完就忽视。
 
 ---
 
@@ -110,7 +120,7 @@
 
 [按需求搜索](docs/learning/demand-router.md) · [知识与来源](docs/atlas/knowledge-handbook.md) · [官方参考](resources/official-resources.md) · [场景矩阵](docs/scenarios/README.md) · [跨仓责任](resources/upstream-downstream-index.md) · [学习验收](12-Assessments/rubric.md)。
 
-> **特别提示（2026-11-14）**：OpenAI 官方资料明确旧 Evals 平台已进入弃用流程（2026-10-31 只读、2026-11-30 计划关闭），本仓引用的是**评测方法**，不要把旧平台 API 作为新练习的可持续依赖。
+> **特别提示（2026-11-14）**：OpenAI 评测指南提示旧 Evals 平台将于 2026-10-31 转只读、计划 2026-11-30 关闭（截至本次审计），本仓引用的是**评测方法**，不要把旧平台 API 作为新练习的可持续依赖。
 
 
 ## 九、可直接运行的三个微型实验

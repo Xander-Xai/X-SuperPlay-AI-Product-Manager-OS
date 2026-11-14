@@ -1,7 +1,7 @@
 {
-  "schema": "3.0",
+  "schema": "4.0",
   "updated_on": "2026-11-14",
-  "purpose": "Complete but non-linear PM/AI Product Engineer knowledge; demand-driven routing with authoritative theory, lay analogies and source-to-practice links",
+  "purpose": "Product management complete foundation coverage matrix; nonlinear teaching, professional definitions, practical evidence, distinct business and human gates",
   "learning_state": "NOT_RUN",
   "topics": [
     {
@@ -326,7 +326,8 @@
       ],
       "resources": [
         "S18",
-        "S08"
+        "S08",
+        "S56"
       ],
       "exercise": "在隔离工具沙箱检查 schema、租户权限、审批、审计",
       "evidence": "未授权拒绝、无副作用、版本兼容性记录",
@@ -365,7 +366,8 @@
       ],
       "resources": [
         "S06",
-        "S17"
+        "S17",
+        "S56"
       ],
       "exercise": "强制工具失败/循环上限/断点重启，证明 fail-closed",
       "evidence": "可重复 Trace、停止与恢复断言",
@@ -439,6 +441,7 @@
         "ENG06"
       ],
       "resources": [
+        "S56",
         "S07",
         "S08"
       ],
@@ -1755,6 +1758,385 @@
         "UP12",
         "UP17"
       ]
+    },
+    {
+      "id": "PM24",
+      "name": "市场规模 TAM/SAM/SOM 与机会测算",
+      "domain": "product",
+      "role": "PM",
+      "why": "TAM 为理论总可触达需求上限，SAM 为约束产品能力/地域下的可服务市场，SOM 为考虑渠道与竞争后一定时间可获得的部分；应把规模与频率、价格、证据和假设分开。",
+      "requires": [
+        "PM05",
+        "PM19"
+      ],
+      "resources": [
+        "S57",
+        "S30"
+      ],
+      "definition": "TAM 为理论总可触达需求上限，SAM 为约束产品能力/地域下的可服务市场，SOM 为考虑渠道与竞争后一定时间可获得的部分；应把规模与频率、价格、证据和假设分开。",
+      "plain": "城市里所有吃饭的人不是你这家店的客户；店能送到的范围、真正来买的人又是两回事。",
+      "trigger": "需要评估市场空间或向投资/老板解释机会",
+      "exercise": "用公开人口/行业资料和三个明确假设估计范围，并做假设敏感性",
+      "evidence": "注明来源、单位、年份、区间、反证，不把市场总量当订单",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM25",
+      "name": "问卷设计/抽样/定量需求研究",
+      "domain": "product",
+      "role": "PM",
+      "why": "Survey 是受访者自我报告的态度或行为；样本框、招募/无响应偏差、措辞诱导和分母决定能否外推。",
+      "requires": [
+        "PM14"
+      ],
+      "resources": [
+        "S55",
+        "S29"
+      ],
+      "definition": "Survey 是受访者自我报告的态度或行为；样本框、招募/无响应偏差、措辞诱导和分母决定能否外推。",
+      "plain": "只在爱吃辣的微信群发问卷，得到99%爱辣，不能当整个城市的事实。",
+      "trigger": "想用问卷判断需求比例",
+      "exercise": "设计 8 题问卷并列出诱导/双重问题/抽样局限；分析合成应答",
+      "evidence": "目标总体、分母、抽样偏差、至少两个反例和不可外推范围",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM26",
+      "name": "用户研究知情同意/数据治理",
+      "domain": "product",
+      "role": "PM",
+      "why": "研究参与者应知情自愿，理解数据采集、使用、留存、共享与退出边界；研究数据与真实产品事件可能有不同授权要求。",
+      "requires": [
+        "PM03"
+      ],
+      "resources": [
+        "S43",
+        "S44"
+      ],
+      "definition": "研究参与者应知情自愿，理解数据采集、使用、留存、共享与退出边界；研究数据与真实产品事件可能有不同授权要求。",
+      "plain": "顾客给你建议，不等于同意你把录音发布到网上或丢给外部 AI。",
+      "trigger": "要采访用户/录屏/上传用户资料",
+      "exercise": "起草研究同意与撤回流程，用合成数据模拟权限变化/删除",
+      "evidence": "同意说明、最小化、删除/保留限制与责任人，不保存私人资料在公开仓",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM27",
+      "name": "MVP/POC/原型与假设实验",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "Prototype 用于探索交互，POC 验证技术可行性，MVP 用最小有意义产品/服务检验关键价值假设，Pilot 是受控试点，Production 是真实运营环境；这些不是同义词。",
+      "requires": [
+        "PM13",
+        "PM22"
+      ],
+      "resources": [
+        "S46",
+        "S42",
+        "S41"
+      ],
+      "definition": "Prototype 用于探索交互，POC 验证技术可行性，MVP 用最小有意义产品/服务检验关键价值假设，Pilot 是受控试点，Production 是真实运营环境；这些不是同义词。",
+      "plain": "试吃小摊验证有没有人买（MVP），先试炉灶能否炒菜（POC），画菜单（原型），正式开店（生产）是不同证据。",
+      "trigger": "客户要求先做 Demo/MVP 或没法判断先做什么",
+      "exercise": "为一个产品风险比较访谈/纸面原型/手工服务/POC/MVP，选择最便宜有效验证",
+      "evidence": "每种方法的问题、成功/失败、停止阈值及证据强度",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM28",
+      "name": "Scrum Product Owner/Product Goal/Backlog",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "在 Scrum 框架中 Product Owner 对最大化产品价值与有效管理 Product Backlog 负责，包括 Product Goal 与条目排序；PM 职位不必然等于 PO。",
+      "requires": [
+        "PM16",
+        "PM06"
+      ],
+      "resources": [
+        "S47",
+        "S49"
+      ],
+      "definition": "在 Scrum 框架中 Product Owner 对最大化产品价值与有效管理 Product Backlog 负责，包括 Product Goal 与条目排序；PM 职位不必然等于 PO。",
+      "plain": "老板决定做哪类菜；Scrum 的 PO 还要对菜单待办项的透明和排序负责，不代表他包揽每道菜的操作。",
+      "trigger": "被问 PO/PM 差别或 Sprint 中需求排序",
+      "exercise": "拆一条 Product Goal 与 5 条 Backlog，演示 PO 如何排序与拒绝",
+      "evidence": "Product Goal、Backlog、责任边界，标明 Scrum 与其他组织模式不同",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM29",
+      "name": "验收标准 AC/DoD/DoR 的边界",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "Acceptance Criteria 约束单条需求的验收行为；Definition of Done 是 Increment 的完成质量共同标准；Definition of Ready 常用但不是官方 Scrum 2020 强制工件。",
+      "requires": [
+        "PM28",
+        "PM07"
+      ],
+      "resources": [
+        "S47",
+        "S48"
+      ],
+      "definition": "Acceptance Criteria 约束单条需求的验收行为；Definition of Done 是 Increment 的完成质量共同标准；Definition of Ready 常用但不是官方 Scrum 2020 强制工件。",
+      "plain": "菜‘少盐’是这单需求的验收；厨房统一食品安全才是全店的 DoD；备料齐不齐是常见 DoR 检查，不是法律。",
+      "trigger": "需求做完总被退回/验收争议",
+      "exercise": "为 3 条需求写 AC，提一个全团队 DoD，并设计错误/安全反例",
+      "evidence": "区分范围，不用 AC 冒充上线安全门禁，DoR 标可选实践",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM30",
+      "name": "客户之声 VoC/反馈归因与需求合并",
+      "domain": "product",
+      "role": "PM",
+      "why": "Voice of Customer 需要将售后、访谈、使用日志、投诉按事件去重并标来源与频次；反馈不是未经研究就能直接转换的功能任务。",
+      "requires": [
+        "PM03",
+        "PM11"
+      ],
+      "resources": [
+        "S44",
+        "S29"
+      ],
+      "definition": "Voice of Customer 需要将售后、访谈、使用日志、投诉按事件去重并标来源与频次；反馈不是未经研究就能直接转换的功能任务。",
+      "plain": "十个人说‘太慢’可能是同一网络故障，不等于该增加十个功能。",
+      "trigger": "收到很多用户建议不知道怎么处理",
+      "exercise": "合并合成客服/评论/日志，形成问题-证据-假设-行为方案",
+      "evidence": "来源、主题聚类、反例、优先级决定与用户通知闭环",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM31",
+      "name": "产品叙事/决策汇报/跨职能沟通",
+      "domain": "product",
+      "role": "PM",
+      "why": "产品沟通将问题、证据、取舍、风险、备选与结果翻译成可供不同职能作决定的叙事，而不以漂亮 PPT 取代证据。",
+      "requires": [
+        "PM15",
+        "PM16"
+      ],
+      "resources": [
+        "S25",
+        "S26"
+      ],
+      "definition": "产品沟通将问题、证据、取舍、风险、备选与结果翻译成可供不同职能作决定的叙事，而不以漂亮 PPT 取代证据。",
+      "plain": "跟厨师谈做法、跟采购谈成本、跟老板谈投资回报，不是把同一句话重复三遍。",
+      "trigger": "方案讲不清/评审无法拍板",
+      "exercise": "同一决策写领导一页纸与研发 ADR 两种版本，并答反方疑问",
+      "evidence": "受众目标、事实/假设、备选、明确决策与反证",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM32",
+      "name": "可用性测试任务与观察/迭代",
+      "domain": "product",
+      "role": "PM",
+      "why": "Usability Testing 请代表性参与者做代表性任务，观察成功、错误、时长和困难；评价 UI 可用性不同于询问是否喜欢产品。",
+      "requires": [
+        "PM08",
+        "PM14"
+      ],
+      "resources": [
+        "S45",
+        "S29"
+      ],
+      "definition": "Usability Testing 请代表性参与者做代表性任务，观察成功、错误、时长和困难；评价 UI 可用性不同于询问是否喜欢产品。",
+      "plain": "不要问‘你觉得菜单好看吗’，让客人真的完成点菜并看在哪里卡住。",
+      "trigger": "原型很美但用户操作失败",
+      "exercise": "为原型设计 3 个不诱导的任务，做合成演示并计划真实授权用户测试",
+      "evidence": "任务脚本/成功定义/观察与误用，不把模拟评估当真实可用性",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM33",
+      "name": "产品发布沟通/帮助文档/教育",
+      "domain": "product",
+      "role": "PM",
+      "why": "产品发布需要版本说明、已知限制、支持路径、用户教育、内部销售/客服培训和反馈渠道，与仅完成 CI/CD 不同。",
+      "requires": [
+        "PM17",
+        "BIZ10"
+      ],
+      "resources": [
+        "S50",
+        "S12"
+      ],
+      "definition": "产品发布需要版本说明、已知限制、支持路径、用户教育、内部销售/客服培训和反馈渠道，与仅完成 CI/CD 不同。",
+      "plain": "厨房新菜出锅，不告诉服务员怎么介绍、过敏信息或如何退换，顾客仍体验差。",
+      "trigger": "功能上线没人会用或客服重复答同样问题",
+      "exercise": "写发行说明、FAQ、用户引导、内部培训和故障回退通知",
+      "evidence": "可理解文档、支持责任、重大错误公告与可恢复路径",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "DATA05",
+      "name": "激活/新手引导/首次价值",
+      "domain": "data",
+      "role": "PM",
+      "why": "Activation 应定义用户首次完成价值事件，而不是仅注册；Onboarding 降低从进入产品到获得价值的阻力。",
+      "requires": [
+        "DATA01",
+        "PM20"
+      ],
+      "resources": [
+        "S51",
+        "S20"
+      ],
+      "definition": "Activation 应定义用户首次完成价值事件，而不是仅注册；Onboarding 降低从进入产品到获得价值的阻力。",
+      "plain": "进店不等于吃到饭；第一次成功下单且吃到满意的饭才接近激活。",
+      "trigger": "注册很多但次日无人使用",
+      "exercise": "用合成事件拆注册→首任务→有效完成漏斗并设计两种引导",
+      "evidence": "分母/时间窗/合格用户/真实成功定义，无法验证标假设",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "DATA06",
+      "name": "实验统计基础/置信区间/SRM",
+      "domain": "data",
+      "role": "PM",
+      "why": "随机实验需预定义随机化单位、样本量、主要指标和停止规则；SRM、重复查看、多重比较、非独立样本等可能导致假阳性。",
+      "requires": [
+        "DATA03"
+      ],
+      "resources": [
+        "S53",
+        "S54"
+      ],
+      "definition": "随机实验需预定义随机化单位、样本量、主要指标和停止规则；SRM、重复查看、多重比较、非独立样本等可能导致假阳性。",
+      "plain": "掷硬币分组本应一半一半却严重偏斜，胜负很可能是分组坏了，不是菜更好吃。",
+      "trigger": "AB 测试涨了 2% 不知道真假",
+      "exercise": "合成试验设置预定样本/分组，注入 SRM、提前停止，说明该放弃哪些结论",
+      "evidence": "随机化/口径/健康检查/局限，不能把 p 值当效果大小",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "DATA07",
+      "name": "事件埋点规划/数据字典/身份去重",
+      "domain": "data",
+      "role": "PM/PE",
+      "why": "Event Taxonomy 定义行为事件、属性、版本、身份映射和采集时机，防止漏采/双算/隐私越界；数据质量决定分析可靠性。",
+      "requires": [
+        "DATA01",
+        "ENG03"
+      ],
+      "resources": [
+        "S52",
+        "S20"
+      ],
+      "definition": "Event Taxonomy 定义行为事件、属性、版本、身份映射和采集时机，防止漏采/双算/隐私越界；数据质量决定分析可靠性。",
+      "plain": "顾客点两次按钮不代表吃了两碗饭；如果收银和厨房各记一单就会算错销量。",
+      "trigger": "指标报表与真实业务数字打架",
+      "exercise": "写 8 个事件的字段/类型/去重/权限，并测试重复发送与匿名转登录",
+      "evidence": "事件字典、兼容与变更审查、分母/时间窗可复算",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "BIZ13",
+      "name": "产品市场契合 PMF 的证据与反证",
+      "domain": "business",
+      "role": "PM",
+      "why": "PMF 是持续可观察的市场需求、采用、留存及经济性支持产品价值的判断，不由某个单一百分比、问卷、爆款或一次付费自动证明。",
+      "requires": [
+        "BIZ06",
+        "DATA02",
+        "PM05"
+      ],
+      "resources": [
+        "S41",
+        "S31"
+      ],
+      "definition": "PMF 是持续可观察的市场需求、采用、留存及经济性支持产品价值的判断，不由某个单一百分比、问卷、爆款或一次付费自动证明。",
+      "plain": "朋友夸好吃只是兴趣，持续复购、合理价格和竞争下仍选你才逐渐支持经营判断。",
+      "trigger": "不知道产品是否值得扩张",
+      "exercise": "对两个产品构建留存、买方、替代成本和风险证据清单并列反证",
+      "evidence": "按细分/时间窗/真实重复行为，明确尚未知证据",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "BIZ14",
+      "name": "B2B ROI/价值量化与总拥有成本",
+      "domain": "business",
+      "role": "PM",
+      "why": "ROI 假设需要对照当前替代方案，含实施/集成/培训/迁移/安全支持成本和可验证收益；客户 ROI 不等于供应商收入。",
+      "requires": [
+        "BIZ07",
+        "BIZ02"
+      ],
+      "resources": [
+        "S30",
+        "S57"
+      ],
+      "definition": "ROI 假设需要对照当前替代方案，含实施/集成/培训/迁移/安全支持成本和可验证收益；客户 ROI 不等于供应商收入。",
+      "plain": "省了服务员半小时，但买设备、培训和修机器花更多钱，投资未必划算。",
+      "trigger": "客户问 AI 为什么值得采购",
+      "exercise": "按三档假设计算客户现状/AI 方案的 TCO、风险与价值，明确保守假设",
+      "evidence": "客户侧/卖方侧成本分开、收益来源和敏感性",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "MGT06",
+      "name": "产品运营 Product Ops 与变更采用",
+      "domain": "management",
+      "role": "PM",
+      "why": "Product Operations 聚焦产品团队研究、数据、流程和跨部门协作机制；变更采用包括用户/内部支持和反馈，不能等同监控服务器。",
+      "requires": [
+        "PM18",
+        "PM33"
+      ],
+      "resources": [
+        "S26",
+        "S50"
+      ],
+      "definition": "Product Operations 聚焦产品团队研究、数据、流程和跨部门协作机制；变更采用包括用户/内部支持和反馈，不能等同监控服务器。",
+      "plain": "有新菜单还要通知服务员、培训、收集问题、更新备货，而不是只在厨房贴海报。",
+      "trigger": "组织已交付但一线不用新功能",
+      "exercise": "模拟跨部门发布，做沟通/培训/知识库维护/决策日志",
+      "evidence": "采用率/反馈/职责，区分 Product Ops 与 DevOps",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI15",
+      "name": "生产 AI 质量漂移与人工复核运营",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "上线后 AI 质量随模型/检索数据/用户输入/工具环境变化而漂移，需要带版本的采样审计、用户纠错、权限/成本守门和回滚。",
+      "requires": [
+        "AI11",
+        "OPS02",
+        "OPS05"
+      ],
+      "resources": [
+        "S05",
+        "S07",
+        "S56"
+      ],
+      "definition": "上线后 AI 质量随模型/检索数据/用户输入/工具环境变化而漂移，需要带版本的采样审计、用户纠错、权限/成本守门和回滚。",
+      "plain": "试营业时菜好吃不代表换了食材/厨师后一直好吃，得持续抽查并处理差评。",
+      "trigger": "模型升级后答案突然变差",
+      "exercise": "设计金标回归与线上匿名采样计划，模拟来源变更或 Prompt 更新的退化",
+      "evidence": "质量/安全/成本监控、人工审查、回滚阈值，避免泄露用户内容",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "GO03",
+      "name": "多语言/本地化/包容性产品",
+      "domain": "governance",
+      "role": "PM/PE",
+      "why": "Internationalization 与 Localization 涉及文本、日期/数字/币种、文化约束、无障碍及用户研究差异；多语言翻译不等于产品适用当地法律与任务。",
+      "requires": [
+        "PM08",
+        "ETH01"
+      ],
+      "resources": [
+        "S09",
+        "S29"
+      ],
+      "definition": "Internationalization 与 Localization 涉及文本、日期/数字/币种、文化约束、无障碍及用户研究差异；多语言翻译不等于产品适用当地法律与任务。",
+      "plain": "同一菜单在不同城市不仅要翻译，还要按当地口味、支付和过敏法规适配。",
+      "trigger": "产品面向多区域用户",
+      "exercise": "检查三个地区的语言/货币/时区/无障碍任务流，列需专业审查法规",
+      "evidence": "本地化清单、测试与未知监管项，不虚构合规认证",
+      "status": "DESIGNED_NOT_RUN"
     }
   ]
 }

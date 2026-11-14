@@ -17,7 +17,7 @@
 
 ## AI Product Engineer 的 30/60/90 天“覆盖坐标”
 
-参考 [PE 30/60/90](../../09-Product-Engineering/30-60-90.md)，核心是最小工程纵切、陌生约束恢复、第二场景迁移。技术基础可以通过 [55 节点图](../atlas/knowledge-handbook.md) 定位，按失败回溯，不要求先刷完整套 Web/RAG/Agent。
+参考 [PE 30/60/90](../../09-Product-Engineering/30-60-90.md)，核心是最小工程纵切、陌生约束恢复、第二场景迁移。技术基础可以通过 [完整知识图谱](../atlas/knowledge-handbook.md) 定位，按失败回溯，不要求先刷完整套 Web/RAG/Agent。
 
 ## 每周只留一个主 Gap
 

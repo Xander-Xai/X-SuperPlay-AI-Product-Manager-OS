@@ -14,6 +14,6 @@
 
 原仓：[X-SuperPlay-AI-Learning-OS](https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS)（可能私有，公开读者无需其访问权）。
 
-**新补建的 AI PM 主线**：[12 周路线](../ROADMAP.md)、[用户研究](../02-User-Research/README.md)、[产品设计](../04-Product-Design/README.md)、[AI 决策](../05-AI-Product-Management/README.md)、[分析增长](../07-Analytics-Growth/README.md)、[商业化](../08-Commercialization/README.md)、[Capstone](../10-Projects/capstone.md)、[模板](../templates/PRD.md)。
+**新补建的 AI PM 主题索引**：[按需 Roadmap（12 周仅可选复盘坐标）](../ROADMAP.md)、[用户研究](../02-User-Research/README.md)、[产品设计](../04-Product-Design/README.md)、[AI 决策](../05-AI-Product-Management/README.md)、[分析增长](../07-Analytics-Growth/README.md)、[商业化](../08-Commercialization/README.md)、[Capstone](../10-Projects/capstone.md)、[模板](../templates/PRD.md)。
 
 原仓未来更新不能自动覆盖本仓；保留 SHA，人工对比职责边界与事实后再同步。没有核验的历史 JD/研究卡绝不可当作当前真实市场订单或个人实际成绩。

@@ -215,9 +215,10 @@
       "area": "LangGraph 教程索引",
       "title": "LangChain Learn",
       "url": "https://docs.langchain.com/oss/python/learn",
-      "quality": "框架官方教程；条件触发时深入",
+      "quality": "框架官方教程；条件触发时深入；重复入口，优先使用 S17",
       "checked_on": "2026-11-14",
-      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+      "status": "ALIAS_USE_CANONICAL",
+      "alias_of": "S17"
     },
     {
       "id": "S25",
@@ -332,9 +333,10 @@
       "area": "expanded-product-management",
       "title": "Atlassian 动态产品发现",
       "url": "https://www.atlassian.com/agile/product-management/discovery",
-      "quality": "持续发现、Now/Next/Later 与跨团队反馈",
+      "quality": "持续发现、Now/Next/Later 与跨团队反馈；重复入口，优先使用 S01",
       "checked_on": "2026-11-14",
-      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+      "status": "ALIAS_USE_CANONICAL",
+      "alias_of": "S01"
     },
     {
       "id": "S38",
@@ -359,9 +361,163 @@
       "area": "expanded-product-management",
       "title": "Google PAIR 六章节 AI 人机体验",
       "url": "https://pair.withgoogle.com/guidebook-v2/chapters",
-      "quality": "官方 AI UX：需求、数据、心智模型、解释、反馈与错误",
+      "quality": "官方 AI UX：需求、数据、心智模型、解释、反馈与错误；重复入口，优先使用 S22",
       "checked_on": "2026-11-14",
-      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+      "status": "ALIAS_USE_CANONICAL",
+      "alias_of": "S22"
+    },
+    {
+      "id": "S41",
+      "area": "四大产品风险",
+      "title": "SVPG The Four Big Risks",
+      "url": "https://www.svpg.com/four-big-risks/",
+      "quality": "SVPG 原作者；value/usability/feasibility/viability，非法律强制标准",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S42",
+      "area": "OST 发现与机会",
+      "title": "Product Talk Opportunity Solution Trees",
+      "url": "https://www.producttalk.org/opportunity-solution-trees/",
+      "quality": "Product Talk 方法原作者，机会与方案不是同一个层次",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S43",
+      "area": "研究伦理",
+      "title": "NN/g Obtaining Consent for User Research",
+      "url": "https://www.nngroup.com/articles/informed-consent/",
+      "quality": "NN/g 研究知情同意原则",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S44",
+      "area": "研究运营",
+      "title": "NN/g ResearchOps Study Guide",
+      "url": "https://www.nngroup.com/articles/research-ops-study-guide/",
+      "quality": "NN/g 研究样本、隐私与研究资料治理",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S45",
+      "area": "可用性测试",
+      "title": "NN/g Qualitative Usability Testing",
+      "url": "https://www.nngroup.com/articles/qual-usability-testing-study-guide/",
+      "quality": "NN/g 代表性任务、参与者、主持与观察",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S46",
+      "area": "假设与实验",
+      "title": "Strategyzer Experiment Library",
+      "url": "https://www.strategyzer.com/library/experiment-library",
+      "quality": "原作者实验库；成本/证据强度，具体实验设计需结合情境",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S47",
+      "area": "Scrum Product Owner 规范",
+      "title": "Official Scrum Guide 2020",
+      "url": "https://scrumguides.org/scrum-guide.html?lang=en",
+      "quality": "Scrum 唯一官方职责、工件和承诺定义（2026-11 查仍为2020官方版）",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S48",
+      "area": "DoD/DoR/AC 术语",
+      "title": "Atlassian Definition of Done",
+      "url": "https://www.atlassian.com/agile/project-management/definition-of-done",
+      "quality": "实践解释；Scrum DoD 责任以 Scrum Guide 为准",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S49",
+      "area": "Backlog 需求管理",
+      "title": "Atlassian Product Backlog",
+      "url": "https://www.atlassian.com/agile/scrum/backlogs/",
+      "quality": "厂商敏捷方法，不代替 Scrum 官方角色规范",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S50",
+      "area": "产品发布与交接",
+      "title": "Atlassian Product Launch",
+      "url": "https://www.atlassian.com/agile/product-management/product-launch",
+      "quality": "产品定位、发布沟通、销售与支持材料",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S51",
+      "area": "激活与首次价值",
+      "title": "Amplitude Product Activation",
+      "url": "https://www.amplitude.com/blog/getting-started-activation",
+      "quality": "厂商产品分析指南，需按本产品定义激活",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S52",
+      "area": "埋点分类与数据质量",
+      "title": "Amplitude Plan Event Taxonomy",
+      "url": "https://amplitude.com/docs/data/data-planning-playbook",
+      "quality": "厂商官方数据规划文档，事件版本和口径",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S53",
+      "area": "实验健康检查",
+      "title": "Statsig Sample Ratio Mismatch",
+      "url": "https://docs.statsig.com/experiments/monitoring/srm",
+      "quality": "Statsig 产品实验文档，流量分配偏差检查",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S54",
+      "area": "实验统计与观察",
+      "title": "Statsig Product Experimentation Best Practices",
+      "url": "https://statsig.com/blog/product-experimentation-best-practices",
+      "quality": "厂商实验实务；样本量/多重查看/顺序检验须按设计",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S55",
+      "area": "问卷研究方法",
+      "title": "NN/g UX Research Methods Glossary",
+      "url": "https://www.nngroup.com/articles/research-methods-glossary/",
+      "quality": "NN/g 调查/观察方法差异与定义",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S56",
+      "area": "大模型应用安全",
+      "title": "OWASP Top 10 for LLM Applications",
+      "url": "https://owasp.org/projects/top-10-for-large-language-model-applications",
+      "quality": "LLM 风险目录；与 OWASP Web Top10 不是同一清单",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
+    },
+    {
+      "id": "S57",
+      "area": "市场环境与机会",
+      "title": "Strategyzer Business Model Environment",
+      "url": "https://www.strategyzer.com/library/your-business-model-environment",
+      "quality": "Strategyzer 原作者对市场/行业/趋势/宏观环境的框架",
+      "checked_on": "2026-11-14",
+      "status": "SOURCE_PAGE_CHECKED_NOT_PRACTICED"
     }
   ]
 }

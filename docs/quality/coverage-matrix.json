@@ -1,0 +1,252 @@
+{
+  "schema": "1.0",
+  "checked_on": "2026-11-14",
+  "scope": "Generalist Product Manager + AI Product Manager + AI Product Engineer foundation, not specialty accreditation",
+  "domains": [
+    {
+      "id": "foundation-roles",
+      "name": "产品管理基础与角色边界",
+      "topic_ids": [
+        "PM01",
+        "PM16",
+        "PM18",
+        "PM28",
+        "PM29"
+      ],
+      "acceptance": "区分PM/PO/项目经理/工程与DoD责任",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "problem-discovery",
+      "name": "研究/用户问题/访谈与伦理",
+      "topic_ids": [
+        "PM02",
+        "PM03",
+        "PM14",
+        "PM25",
+        "PM26",
+        "PM30"
+      ],
+      "acceptance": "行为证据+调查抽样+知情同意",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "strategy-market",
+      "name": "战略/竞争/市场规模/优先级",
+      "topic_ids": [
+        "PM04",
+        "PM05",
+        "PM06",
+        "PM19",
+        "PM24",
+        "PM12"
+      ],
+      "acceptance": "可反证定位、市场规模假设与机会成本",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "research-experiment",
+      "name": "MVP、POC、原型与机会假设实验",
+      "topic_ids": [
+        "PM13",
+        "PM22",
+        "PM27"
+      ],
+      "acceptance": "不同风险选择合适验证而非默认造AI",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "product-design",
+      "name": "UX/信息架构/用户旅程/可用性测试",
+      "topic_ids": [
+        "PM07",
+        "PM08",
+        "PM20",
+        "PM32",
+        "ETH01"
+      ],
+      "acceptance": "可测PRD+代表性任务+无障碍",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "delivery-scrum",
+      "name": "Backlog/敏捷交付/验收与发布",
+      "topic_ids": [
+        "PM10",
+        "PM17",
+        "PM28",
+        "PM29",
+        "PM33",
+        "OPS01"
+      ],
+      "acceptance": "DoD/AC/DoR/Release有清楚边界",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "metrics-growth",
+      "name": "激活/留存/增长与数据口径",
+      "topic_ids": [
+        "DATA01",
+        "DATA02",
+        "DATA04",
+        "DATA05",
+        "DATA07"
+      ],
+      "acceptance": "完整数据口径与任务价值",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "experiment-stats",
+      "name": "AB/实验统计/随机化与偏差",
+      "topic_ids": [
+        "DATA03",
+        "DATA06",
+        "COG02"
+      ],
+      "acceptance": "样本量、SRM、停止规则和反事实",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "business-model",
+      "name": "商业模式/买方/PMF/单位经济",
+      "topic_ids": [
+        "BIZ01",
+        "BIZ02",
+        "BIZ06",
+        "BIZ08",
+        "BIZ09",
+        "BIZ13"
+      ],
+      "acceptance": "买家行为与真实/合成收入分离",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "gtm-pricing",
+      "name": "GTM/销售/定价/客户ROI",
+      "topic_ids": [
+        "BIZ04",
+        "BIZ05",
+        "BIZ07",
+        "BIZ10",
+        "BIZ11",
+        "BIZ14"
+      ],
+      "acceptance": "采购证据、现金与ROI权衡",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "customer-success",
+      "name": "VoC/支持/用户教育/反馈闭环",
+      "topic_ids": [
+        "PM11",
+        "PM30",
+        "PM33",
+        "MGT06"
+      ],
+      "acceptance": "运营反馈、错误归因与公告",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "org-management",
+      "name": "组织与Product Ops/跨团队协作",
+      "topic_ids": [
+        "MGT01",
+        "MGT02",
+        "MGT03",
+        "MGT04",
+        "MGT05",
+        "MGT06"
+      ],
+      "acceptance": "明确职责、决策权与风险治理",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "ai-technical",
+      "name": "LLM/Prompt/RAG/Agent/多模态/模型判断",
+      "topic_ids": [
+        "AI01",
+        "AI02",
+        "AI03",
+        "AI05",
+        "AI06",
+        "AI07",
+        "AI09",
+        "AI10",
+        "AI13",
+        "AI14"
+      ],
+      "acceptance": "从NO_AI基线到真实技术效果",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "ai-risk",
+      "name": "AI质量/权限/安全/上线漂移",
+      "topic_ids": [
+        "AI04",
+        "AI08",
+        "AI11",
+        "AI12",
+        "AI15",
+        "OPS05"
+      ],
+      "acceptance": "离线+在线质量、攻击和人工审批",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "engineering",
+      "name": "Web全栈/API/SQL/身份/异步",
+      "topic_ids": [
+        "ENG01",
+        "ENG02",
+        "ENG03",
+        "ENG04",
+        "ENG06",
+        "ENG07",
+        "ENG09",
+        "ENG10",
+        "ENG12"
+      ],
+      "acceptance": "真实产品纵切与安全边界",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "operations",
+      "name": "发布运维/恢复/数据治理",
+      "topic_ids": [
+        "OPS01",
+        "OPS02",
+        "OPS03",
+        "OPS04",
+        "OPS05",
+        "OPS06"
+      ],
+      "acceptance": "CI/健康监控/备份/回滚与责任人",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "governance",
+      "name": "行业/研究伦理/无障碍/本地化",
+      "topic_ids": [
+        "GO01",
+        "GO02",
+        "GO03",
+        "PM26",
+        "ETH01"
+      ],
+      "acceptance": "法律/地域/伦理不是模板签章即可",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    },
+    {
+      "id": "career-evidence",
+      "name": "独立考核/来源分层/真实商业事实",
+      "topic_ids": [
+        "COG01",
+        "COG03",
+        "PM31",
+        "MGT05"
+      ],
+      "acceptance": "文档≠本人会做≠真实客户验证",
+      "status": "INDEXED_NOT_HUMAN_VERIFIED"
+    }
+  ]
+}

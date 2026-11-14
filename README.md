@@ -2,7 +2,7 @@
 
 **AI Product Manager × AI Product Engineer：知识全景、需求驱动学习、真实交付能力**
 
-> v0.3.0 · 2026-11-14 · CURRICULUM_DESIGNED / PRACTICE_NOT_RUN / HUMAN_UNASSESSED。**知识覆盖完整不等于已经学会，仓库文档 CI 通过不等于任何产品已上线。**
+> v0.4.0 · 2026-11-14 · CURRICULUM_DESIGNED / PRACTICE_NOT_RUN / HUMAN_UNASSESSED。**知识覆盖完整不等于已经学会，仓库文档 CI 通过不等于任何产品已上线。**
 
 ## 核心学习观
 
@@ -13,6 +13,10 @@
 **认知目标**：看到整个产品生命周期、四类产品风险、管理/财务/销售/Founder/行业知识之间的逻辑；**执行目标**：今天哪里不会就先学哪里，用理论与实际反例建立能力。
 
 [专业×大白话入门](docs/atlas/product-manager-primer.md) · [四张可渲染关系图](docs/atlas/product-lifecycle-mermaid.md) · [上游 22 组真实资料路径](resources/upstream-pm-knowledge-index.md) · [非线性学习 SOP](docs/learning/point-to-system-method.md)。
+
+## V4 基础知识查漏补缺与一致性审计
+
+从 [基础覆盖审计](docs/quality/coverage-audit-20261114.md) 查“哪些主题完善、哪些有边界”，通过 [按问题选课表](docs/learning/product-foundations-task-router.md) 快速找 MVP、市场测算、Scrum/DoD、访谈伦理、激活与 A/B 统计等基础。唯一术语/状态解释入口为 [术语一致性公约](docs/quality/terminology-contract.md)。
 
 ## 四个入口
 

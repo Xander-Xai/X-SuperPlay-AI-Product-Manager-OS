@@ -40,6 +40,8 @@
 | **Human-in-the-Loop** | 对高风险决策/外部动作保留人的审核、接管、撤销能力 | 退款和改订单不能只听机器人一句话就自动扣钱 | `AI05`、`AI12` / [S40](https://pair.withgoogle.com/guidebook-v2/chapters) |
 | **Product Risk 四风险** | 价值、可用性、可行性、商业可持续性需要并行评估且权重随任务而变 | 会做一道菜，不代表有人点、吃得顺利、材料够且卖一份不亏 | `PM22` / [S25](https://www.svpg.com/product-management-an-introduction/)、[S26](https://www.svpg.com/the-product-operating-model-an-introduction/) |
 
+更多岗位边界与 `MVP/POC/Pilot/Production`、`AC/DoD/DoR`、`PM/PO/项目经理` 的正式定义，请读 [术语一致性公约](../quality/terminology-contract.md)。
+
 ## 三种典型误解，必须纠正
 
 1. **“我写完 PRD 就是 PM”** → PRD 是沟通和验收的媒介，若问题/用户/反证是假的，写得越精美风险越大。回到 PM02、PM03、PM13。
@@ -60,4 +62,4 @@
 - **PE 负责可运行**：把选定的业务场景实现为可测试、可恢复、安全的系统；仍必须说明为何做和替代方案。
 - **Founder 可能兼任两者**：不能把岗位技能测试当市场证据，更不能把 AI 帮做当本人独立掌握。
 
-下一步：[四张关系图](product-lifecycle-mermaid.md) · [55+ 扩展知识卡](knowledge-handbook.md) · [按需路由](../learning/demand-router.md) · [上游专门资料索引](../../resources/upstream-pm-knowledge-index.md)。
+下一步：[四张关系图](product-lifecycle-mermaid.md) · [完整知识卡](knowledge-handbook.md) · [按需路由](../learning/demand-router.md) · [上游专门资料索引](../../resources/upstream-pm-knowledge-index.md)。
