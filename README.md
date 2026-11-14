@@ -37,6 +37,10 @@ python tools/learning_router.py validate
 
 首选场景：[知识助手](docs/scenarios/rag-knowledge-assistant.md) · [Agent审批](docs/scenarios/agent-approval.md) · [个人 AI 网站](docs/scenarios/solo-ai-site.md) · [收费 AI SaaS](docs/scenarios/paid-ai-saas.md) · [效果增长](docs/scenarios/ai-product-metrics.md)。
 
+## 动手练习（纯标准库，无需模型 API）
+
+[3 套离线可执行 Lab](labs/README.md)：RAG 证据/版本/权限、Agent 审批/幂等、产品指标与每成功任务成本；教学 baseline ≠ 生产系统。保留可选 [PM 12 周复盘坐标](docs/learning/optional-cadence.md)，不强制按周学。
+
 ## 已有的 12 个课程目录（保留，可按需跳转）
 
 [基础](01-Foundations/README.md) · [研究](02-User-Research/README.md) · [战略](03-Product-Strategy/README.md) · [产品设计](04-Product-Design/README.md) · [AI PM](05-AI-Product-Management/README.md) · [交付](06-Product-Delivery/README.md) · [数据增长](07-Analytics-Growth/README.md) · [商业](08-Commercialization/README.md) · [PE](09-Product-Engineering/README.md) · [Capstone](10-Projects/capstone.md) · [职业](11-Career-Interview/README.md) · [独立考核](12-Assessments/rubric.md)。

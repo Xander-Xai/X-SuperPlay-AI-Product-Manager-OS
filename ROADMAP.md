@@ -44,7 +44,7 @@
 - **AI Product Manager**：在所有领域先达到 **可独立判断/定义验收**，不强制自己训练模型或写 K8s；AI 选型、安全、数据与商业必须能解释取舍。
 - **AI Product Engineer**：在要交付的场景完成 **可运行、可测试、可恢复** 的技术纵切；同时具备最小产品发现/PRD/商业判断，不以写代码代替需求验证。
 - **技术深入（按需）**：大模型训练/LoRA、优化器、分布式推理、RAG、LangGraph、Harness、Context Engineering、Fullstack 来自 [上游技术学习仓](resources/upstream-downstream-index.md)，本仓提供它们在产品中的位置/触发条件/目标证据，不重复所有技术教程。
-- **可选时间视图**：保留 [原 PE 30/60/90](09-Product-Engineering/30-60-90.md) 与 PM 基础 12 周供复盘；**不得当成必走路线**。今天若有上线授权失败，直接走 AuthZ/安全/发布学习路径。
+- **可选时间视图**：保留 [原 PE 30/60/90](09-Product-Engineering/30-60-90.md) 与 [PM 基础 12 周参考时窗](docs/learning/optional-cadence.md) 供复盘；**不得当成必走路线**。今天若有上线授权失败，直接走 AuthZ/安全/发布学习路径。
 
 ## 五、学习一个知识点的 7 个动作
 
@@ -83,3 +83,8 @@
 [按需求搜索](docs/learning/demand-router.md) · [知识与来源](docs/atlas/knowledge-handbook.md) · [官方参考](resources/official-resources.md) · [场景矩阵](docs/scenarios/README.md) · [跨仓责任](resources/upstream-downstream-index.md) · [学习验收](12-Assessments/rubric.md)。
 
 > **特别提示（2026-11-14）**：OpenAI 官方资料明确旧 Evals 平台已进入弃用流程（2026-10-31 只读、2026-11-30 计划关闭），本仓引用的是**评测方法**，不要把旧平台 API 作为新练习的可持续依赖。
+
+
+## 九、可直接运行的三个微型实验
+
+[离线 Lab 总索引](labs/README.md)：规则检索/引用与租户隔离、Agent 审批与幂等、任务成功率与单位成本。所有输入均为合成数据，**不是生产级 RAG 或 Agent**；先理解机制/失败，再在真实授权项目中扩展。
