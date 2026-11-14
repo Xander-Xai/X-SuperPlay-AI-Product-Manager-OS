@@ -56,3 +56,19 @@
 **残余风险与下一步**：外部 URL 随时可能变化，私有上游路径只按授权访问；教材中的练习大多是设计态，尚无学员/客户验收；部分高级产品领域（行业特殊法规、复杂定价计量、跨国市场）仍需按真实问题深挖。对外正式服务/真实支付/处理隐私必须额外合规和专业验收。
 
 参考：[SVPG 四风险](https://www.svpg.com/four-big-risks/) · [Scrum Guide](https://scrumguides.org/scrum-guide.html?lang=en) · [NN/g ResearchOps](https://www.nngroup.com/articles/research-ops-study-guide/) · [Strategyzer Experiments](https://www.strategyzer.com/library/experiment-library) · [Statsig SRM](https://docs.statsig.com/experiments/monitoring/srm)。
+
+## 验收证据快照（2026-11-14）
+
+| 检查项 | 已验证的结果 | 不包含的保证 |
+|---|---|---|
+| 主知识目录 | 102 个知识节点，全部有资料 ID、触发、动手练习和证据出口 | 不保证任何人已学会 |
+| 基础覆盖 | 18 个能力领域，102/102 节点至少归属一个领域 | 不覆盖所有行业专项或国家法规 |
+| 外部资料元数据 | 57 个 ID、4 个 URL 兼容别名，53 个不同 URL | 不是 57 篇不同教材，也不代表全部外链实时可用 |
+| 上游桥接 | 22 个私仓资料路径在已核验快照中存在 | 不公开私仓正文，不能绕过访问权限 |
+| 文档本地链接 | 215 个检查通过 | 不自动检查网页外链实时 HTTP 状态或所有锚点 |
+| 知识和术语测试 | 16 项 Python 结构/一致性测试通过 | 不是人的独立答辩 |
+| 合成教学实验 | 18 项沙箱测试通过 | 不是生产安全/真实客户 UAT |
+
+**本次可复核 CI**：[GitHub Actions run 43604522659](https://github.com/Xander-Xai/X-SuperPlay-AI-Product-Manager-OS/actions/runs/43604522659)，验证对应代码提交 `de836fff6475dc8b4c3bdb9e0a028cc77a1e1216`。该结果不自动证明后来未执行测试的新修改；持续验收应以最新 HEAD 的 CI 为准。
+
+**业务学习状态**：全部新增主题仍是 `DESIGNED_NOT_RUN`；未做真实访谈、使用方验收、真实生产上线或收款确认。全景覆盖不是绝对“任何产品都无需再补课”的声明，具体行业、法规、技术和商业约束到来时继续以需求驱动增补。
