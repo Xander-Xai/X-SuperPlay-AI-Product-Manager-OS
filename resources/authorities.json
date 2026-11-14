@@ -1,0 +1,223 @@
+{
+  "schema": "1.0",
+  "checked_on": "2026-11-14",
+  "policy": "authority page reviewed != implementation executed; verify current platform docs before use",
+  "sources": [
+    {
+      "id": "S01",
+      "area": "产品发现与需求来源",
+      "title": "Atlassian Product Discovery",
+      "url": "https://www.atlassian.com/agile/product-management/discovery",
+      "quality": "官方产品方法",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S02",
+      "area": "PRD 与需求",
+      "title": "Atlassian Requirements",
+      "url": "https://www.atlassian.com/agile/product-management/requirements",
+      "quality": "官方产品方法",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S03",
+      "area": "路线图与决策",
+      "title": "Atlassian Product Roadmaps",
+      "url": "https://www.atlassian.com/agile/product-management/product-roadmaps",
+      "quality": "官方产品方法",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S04",
+      "area": "以人为本 AI 设计",
+      "title": "Google PAIR Guidebook",
+      "url": "https://pair.withgoogle.com/guidebook-v2/",
+      "quality": "官方设计指南（仅链接；有非商业授权限制）",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S05",
+      "area": "AI 评测方法",
+      "title": "OpenAI Evaluation Best Practices",
+      "url": "https://developers.openai.com/api/docs/guides/evaluation-best-practices",
+      "quality": "官方指南；旧 Evals 平台有退役安排，勿把旧接口当新实验起点",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S06",
+      "area": "Workflow/Agent 工程取舍",
+      "title": "Anthropic Building Effective Agents",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "quality": "厂商工程指南",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S07",
+      "area": "AI 治理风险",
+      "title": "NIST GenAI Profile",
+      "url": "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence",
+      "quality": "官方风险框架；非法律合规认证",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S08",
+      "area": "Web 安全风险",
+      "title": "OWASP Top 10:2025",
+      "url": "https://top10.owasp.org/2025/0x00_2025-Introduction/",
+      "quality": "行业安全项目",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S09",
+      "area": "无障碍",
+      "title": "W3C WCAG 2.2 Quick Reference",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+      "quality": "W3C 技术标准",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S10",
+      "area": "HTTP 与协议",
+      "title": "MDN Overview of HTTP",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+      "quality": "Web 文档参考",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S11",
+      "area": "应用鉴权",
+      "title": "FastAPI Security",
+      "url": "https://fastapi.tiangolo.com/tutorial/security/",
+      "quality": "框架官方文档",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S12",
+      "area": "后端部署",
+      "title": "FastAPI Deployment Concepts",
+      "url": "https://fastapi.tiangolo.com/deployment/concepts/",
+      "quality": "框架官方文档",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S13",
+      "area": "数据库事务",
+      "title": "PostgreSQL Official Tutorial",
+      "url": "https://www.postgresql.org/docs/current/tutorial.html",
+      "quality": "数据库官方文档",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S14",
+      "area": "Next.js 上线清单",
+      "title": "Next.js Production Checklist",
+      "url": "https://nextjs.org/docs/app/guides/production-checklist",
+      "quality": "框架官方文档",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S15",
+      "area": "容器化部署",
+      "title": "Docker Compose in Production",
+      "url": "https://docs.docker.com/compose/how-tos/production/",
+      "quality": "基础设施官方文档",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S16",
+      "area": "可观测性",
+      "title": "OpenTelemetry Observability Primer",
+      "url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+      "quality": "开源项目官方文档",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S17",
+      "area": "Agent/RAG/Context 教程",
+      "title": "LangChain/LangGraph Learn",
+      "url": "https://docs.langchain.com/oss/python/learn",
+      "quality": "框架官方文档；使用前确认版本与状态机制",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S18",
+      "area": "MCP 现代协议",
+      "title": "MCP 2026-07-28 Release",
+      "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+      "quality": "官方版本公告；实现需核对具体 SDK 版本",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S19",
+      "area": "LLM/Embedding/生产 ML",
+      "title": "Google Machine Learning Crash Course",
+      "url": "https://developers.google.com/machine-learning/crash-course",
+      "quality": "官方课程含交互与练习",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S20",
+      "area": "分析与增长",
+      "title": "Amplitude Product Analytics Guide",
+      "url": "https://www.amplitude.com/guides/product-analytics",
+      "quality": "厂商产品分析指南",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S21",
+      "area": "前端部署选项",
+      "title": "Next.js Deploying",
+      "url": "https://nextjs.org/docs/app/getting-started/deploying",
+      "quality": "框架官方部署指南",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S22",
+      "area": "AI 数据与失败设计",
+      "title": "Google PAIR Chapters",
+      "url": "https://pair.withgoogle.com/guidebook-v2/chapters",
+      "quality": "官方 UX 指南，仅链接",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S23",
+      "area": "Web 安全清单入口",
+      "title": "OWASP Top 10",
+      "url": "https://owasp.org/projects/top-ten",
+      "quality": "安全共识参考，按当前版本复核",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S24",
+      "area": "LangGraph 教程索引",
+      "title": "LangChain Learn",
+      "url": "https://docs.langchain.com/oss/python/learn",
+      "quality": "框架官方教程；条件触发时深入",
+      "checked_on": "2026-11-14",
+      "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    }
+  ]
+}

@@ -1,46 +1,52 @@
 # X-SuperPlay AI Product Manager OS
 
-**AI 原生产品经理（AI Product Manager）× AI 产品工程师（AI Product Engineer）学习、实战与商业化操作系统**
+**AI Product Manager × AI Product Engineer：知识全景、需求驱动学习、真实交付能力**
 
-> v0.1.0 · 2026-11-14 · CURRICULUM_DESIGNED / PRACTICE_NOT_RUN / HUMAN_UNASSESSED。存在课程不等于已经学习或掌握，代码通过不等于有真实用户，合成收入不等于成交。
+> v0.2.0 · 2026-11-14 · CURRICULUM_DESIGNED / PRACTICE_NOT_RUN / HUMAN_UNASSESSED。**知识覆盖完整不等于已经学会，仓库文档 CI 通过不等于任何产品已上线。**
 
-## 定位与两条主线
+## 核心学习观
 
-| | AI Product Manager | AI Product Engineer |
-|---|---|---|
-| 核心职责 | 决定为谁、解决什么、为什么值得做、怎么衡量价值 | 把有价值的需求做成可靠、安全、可维护的 AI 产品 |
-| 重点知识 | JTBD/访谈/PRD/UX、优先级/指标/实验、LLM 选型、成本/定价/商业模型 | RAG/Agent/Python/FastAPI、UI/API/SQL/鉴权、评测/部署/回滚、独立排错 |
-| 核心成果 | 需求证据、竞品替代、PRD/原型、Eval、产品路线图和可证伪商业假设 | 原工程 commit、可复现纵切、负例测试、上线和恢复证据 |
-| 共同原则 | 先尝试不用 AI 的方案；必须区分产品价值、技术效果、用户验证和收入事实 | 同左 |
+**不是课程从 0 → 1 → 2 机械刷完。** 完整知识关系图告诉你学什么、为什么、彼此怎么关联；当真实需求出现时，只定位必要知识和缺口，读权威资料、做最小实验、用独立负例验收。知识内容能覆盖真实上线所需能力，却不要求学习仓变成某个下游项目仓。
 
-**为什么独立建仓**：AI Learning OS 偏技术学习，产品经理的需求发现、设计、业务决策、增长与商业化缺少独立闭环；本仓拥有 PM/PE 产品化学习的主索引，不复制算法大课或真实营收账。
+## 四个入口
 
-## 快速开始
+| 你现在要做什么 | 入口 |
+|---|---|
+| 看完整知识结构、作用与先修逻辑 | [ROADMAP：全景知识路线](ROADMAP.md) / [知识图谱](docs/atlas/knowledge-graph.md) |
+| 卡在一个问题，直接查学什么 | [需求驱动 Router](docs/learning/demand-router.md) / `python tools/learning_router.py search "越权"` |
+| 找到具体权威资料与可执行实操 | [知识卡手册](docs/atlas/knowledge-handbook.md) / [官方资料索引](resources/official-resources.md) |
+| 想证明学完能做真正可运营的产品 | [上线 Gate](docs/launch/production-readiness.md) / [场景矩阵](docs/scenarios/README.md) |
 
-1. [ROADMAP](ROADMAP.md)：按 PM 12 周、PE 30/60/90 或创业混合路线选择主线。
-2. [学习治理](GOVERNANCE.md)：先标事实/假设/权限，再选择一个最大技能缺口。
-3. 完成 [用户研究](02-User-Research/README.md)、[产品战略](03-Product-Strategy/README.md)、[PRD](templates/PRD.md)。
-4. AI 选型必须经过 [AI PM 技术决策](05-AI-Product-Management/README.md) 与 [Eval/风险门禁](05-AI-Product-Management/eval-and-guardrails.md)。
-5. 做 [完整 Capstone](10-Projects/capstone.md)，依 [独立考核](12-Assessments/rubric.md) 验收。
-6. 需要产品工程实战则进入 [PE 主线](09-Product-Engineering/README.md)，需要学习资源见 [官方资料索引](resources/official-resources.md)。
+## PM / PE 双主线
 
-## 十二模块学习地图
+| AI Product Manager (PM) | AI Product Engineer (PE) |
+|---|---|
+| 用户、问题、替代/价值、PRD、交互、指标、买方、定价、产品风险、技术取舍 | API/UI/SQL/鉴权、LLM/RAG/Agent、Context/Harness、安全、可观测、部署、回滚、独立排错 |
+| 产品为何做、如何判断有效、何时停止 | 产品如何可靠实现、如何恢复与演进 |
+| 概念要能独立判断，但不要求亲自训练全部模型 | 技术要有可复现证据，仍需理解用户价值与成本 |
 
-| 模块 | 重点 | 最小交付 |
-|---|---|---|
-| [01 基础](01-Foundations/README.md) | 产品生命周期、角色职责、结果思维 | 角色/任务地图 |
-| [02 用户](02-User-Research/README.md) | 用户访谈、JTBD、行为证据 | 访谈与假设矩阵 |
-| [03 战略](03-Product-Strategy/README.md) | 竞品替代、优先级、Stop Rule | 方案比较与 ADR |
-| [04 设计](04-Product-Design/README.md) | PRD、任务流、UX、错误态 | PRD + 线框/验收 |
-| [05 AI PM](05-AI-Product-Management/README.md) | LLM/RAG/Agent/多模态、模型评测 | 选型与风险/Eval |
-| [06 交付](06-Product-Delivery/README.md) | 研发协作、UAT、发布、回滚 | 发布门禁清单 |
-| [07 增长](07-Analytics-Growth/README.md) | 漏斗、留存、实验、埋点 | 指标字典 |
-| [08 商业](08-Commercialization/README.md) | 定价、买方、单位经济 | 成本和商业假设 |
-| [09 PE](09-Product-Engineering/README.md) | 可运行系统与安全/排错 | 固定工程证据 |
-| [10 项目](10-Projects/capstone.md) | 端到端 AI 产品实践 | 跨角色证据包 |
-| [11 职业](11-Career-Interview/README.md) | 案例作品集、面试 | 结构化答辩 |
-| [12 考核](12-Assessments/rubric.md) | 独立实操、迁移、四轨证据 | 人工 Rubric |
+## 使用示例（离线，不调用模型 API）
 
-模板：[PRD](templates/PRD.md) · [访谈](templates/Interview.md) · [Eval](templates/Eval.md) · [MVP/商业](templates/MVP-and-Unit-Economics.md) · [ADR](templates/ADR.md) · [AI 导师](prompts/ai-pm-coach.md)。
+```bash
+python tools/learning_router.py list
+python tools/learning_router.py search "重复写入"
+python tools/learning_router.py route ENG06 --deep
+python tools/learning_router.py scenario solo-ai-site
+python tools/learning_router.py validate
+```
 
-迁移来源与校验边界：[Source Migration Map](resources/source-migration-map.md)。**本仓 Public；请勿上传私人 JD、简历、薪资、客户文档、合同、订单、个人数据或密钥。**
+首选场景：[知识助手](docs/scenarios/rag-knowledge-assistant.md) · [Agent审批](docs/scenarios/agent-approval.md) · [个人 AI 网站](docs/scenarios/solo-ai-site.md) · [收费 AI SaaS](docs/scenarios/paid-ai-saas.md) · [效果增长](docs/scenarios/ai-product-metrics.md)。
+
+## 已有的 12 个课程目录（保留，可按需跳转）
+
+[基础](01-Foundations/README.md) · [研究](02-User-Research/README.md) · [战略](03-Product-Strategy/README.md) · [产品设计](04-Product-Design/README.md) · [AI PM](05-AI-Product-Management/README.md) · [交付](06-Product-Delivery/README.md) · [数据增长](07-Analytics-Growth/README.md) · [商业](08-Commercialization/README.md) · [PE](09-Product-Engineering/README.md) · [Capstone](10-Projects/capstone.md) · [职业](11-Career-Interview/README.md) · [独立考核](12-Assessments/rubric.md)。
+
+## 上游与下游边界
+
+- **技术上游**：[X-SuperPlay-AI-Learning-OS](https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS)（Private）；RAG/Agent/LLM、全栈、Context/Harness 深层教程继续由上游维护。
+- **本仓**：AI PM/PE **产品知识地图、按需学习路由、实战任务/验收、上线必备知识**。
+- **真实工程/下游**：实现、部署和运行证据保留具体工程仓；Career OS 和 OPC 分别管理真实岗位与商业事实。
+
+[跨仓索引与源知识桥](resources/upstream-downstream-index.md) · [从上游迁移的来源记录](resources/source-migration-map.md) · [治理协议](GOVERNANCE.md) · [知识库维护准则](CONTRIBUTING.md)。
+
+**Public 仓库：严禁提交私密 JD、简历、客户/合同/订单、个人信息与密钥。**

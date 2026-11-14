@@ -1,23 +1,38 @@
-# PM × PE 独立能力量表
+# PM × PE 独立学习与上线验收量表
 
-> ASSESSMENT_DESIGNED / HUMAN_UNASSESSED。机器静态校验不为人打分，AI 做完不等于本人掌握。
+> RUBRIC_DESIGNED / HUMAN_UNASSESSED。**机器目录一致性通过 ≠ 人已经掌握 ≠ 任何产品已生产验证**。
 
-## 0–4 级
-0 不会；1 在 AI 指导下能做；2 能独立解释/局部复现；3 **关闭 AI** 能独立设计、完成和排错；4 间隔 1–7 天变更陌生数据/业务/权限仍独立完成。关键技能 ≥3 且无安全硬失败才可标独立通过，迁移需相应能力达 4，由人类评审留痕。
+## 人的知识能力 0–4
 
-| 领域 | PM 闭卷考题 | PE 闭卷考题 | 核心证据 |
+0 不会；1 AI 指导下能完成；2 可独立解释与部分复现；3 关 AI 独立完成、测试与解释权衡；4 间隔 1–7 日在陌生业务/数据/权限条件仍能独立迁移。**不按学习小时数/文档条目数加分**；只有实际证据及人工复核才升级。
+
+## 课程内容分级
+
+| 状态 | 说明 |
+|---|---|
+| INDEXED | 已有概念/逻辑依赖/官方资料/实操/证据出口 |
+| EXERCISE_DESIGNED | 有明确输入输出、成功与至少两个失败用例 |
+| RUN_WITH_EVIDENCE | 在隔离环境有真实运行版本/命令/结果 |
+| HUMAN_INDEPENDENT | 本人关 AI 完成陌生用例，有人工复核 |
+| TRANSFER_VERIFIED | 隔日更换约束仍通过 |
+| PRODUCTION_EVIDENCE | 工程仓真实环境和上线 Gate 验证，非课程仓可自行宣称 |
+
+## 四轨业务事实状态保持原有契约
+
+- Engineering：NOT_RUN / RUN_WITH_EVIDENCE / VERIFIED。
+- Human：UNASSESSED / PRACTICING / INDEPENDENT_PASS / TRANSFER_PASS。
+- User：NOT_RUN / OBSERVED_WITH_CONSENT / VALIDATED_WITH_EVIDENCE。
+- Commercial：NOT_VERIFIED / VERIFIED_BY_OWNER_REPO。
+
+## PM/PE 关键实操
+
+| 场景 | PM 独立测评 | PE 独立测评 | 必须保留的证据 |
 |---|---|---|---|
-| 用户价值 | 证明/否定 JTBD、替代品和买方 | 把模糊场景变成可测 UAT | 来源、反证、Stop Rule |
-| 产品决策 | 资源收缩下做优先级和定价选择 | 比较人工/规则/RAG/Agent | ADR 与成本 |
-| 体验交付 | PRD、异常与信任/接管状态 | 前后端/权限/回滚完整实现 | PRD、线框、正负测试 |
-| AI 评测 | 指标、分母、风险与发布阈值 | 金标、拒答、检索、工具与独立排错 | 原始运行日志与版本 |
-| 数据商业 | 留存/漏斗、单位经济口径 | 推理/重试/支持成本测量 | 可复算数字与假设等级 |
-| 迁移 | 新买方/新约束下重新定义产品 | 关 AI 修陌生跨层 Bug | 原始答卷/复测日期 |
+| 用户要求做 AI | 反证 JTBD、替代/买方与 Stop Rule | 制定最轻实现与非 AI 基线 | 原始事实/假设分层 |
+| UI/PRD 返工 | 用任务流程/错误态写可测需求 | 前端/API 契约与安全测试 | PRD、交互/UAT |
+| RAG 过期/越权 | 设计可追溯拒答、评测分母和人工接管 | 金标、数据版本/权限与负例 | Eval 数据、版本、测试 |
+| Agent 重复写入 | 设计审批/风险告知与恢复行为 | 工具权限、幂等、持久化、停止、Trace | 失败注入与恢复日志 |
+| SaaS 经营成本 | 买方、定价与可证伪的单位经济 | Token/重试/支持成本与伸缩 | 可复算模型/实际证据 |
+| 真正上线 | 真实/模拟 UAT 分级、客户支持与发布决策 | 干净环境、CI、AuthZ、监控、备份/回滚 | [G0–G7](../docs/launch/production-readiness.md) 门禁 |
 
-## 四轨不混淆
-Engineering: NOT_RUN / RUN_WITH_EVIDENCE / VERIFIED；
-Human: UNASSESSED / PRACTICING / INDEPENDENT_PASS / TRANSFER_PASS；
-User: NOT_RUN / OBSERVED_WITH_CONSENT / VALIDATED_WITH_EVIDENCE；
-Commercial: NOT_VERIFIED / VERIFIED_BY_OWNER_REPO。
-
-**硬失败**：越权、数据泄露、擅自危险写入、虚构客户或收入、用 AI 自评冒充独立能力。公开仓只保留匿名试题/非敏感证据，原始客户、订单和求职事实留权威仓。
+**硬失败**：越权、隐私泄漏、未经审批危险写入、无恢复方案的不可逆数据更改、虚构客户/营收/个人能力。条件触发的风险管理需人工负责，不等于法规认证。

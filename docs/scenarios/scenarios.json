@@ -1,0 +1,94 @@
+{
+  "schema": "1.0",
+  "status": "DESIGNED_NOT_RUN",
+  "scenarios": [
+    {
+      "id": "rag-knowledge-assistant",
+      "title": "知识助手引用错误/权限越界",
+      "topics": [
+        "PM02",
+        "PM07",
+        "AI03",
+        "AI04",
+        "AI11",
+        "ENG06",
+        "OPS06"
+      ],
+      "failure_cases": "公开/合成文档版本变化、跨租户数据读写、缺证据拒答",
+      "done": "retrieval gold+引用支持率与越权 0 次通过、干净环境复现",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "agent-approval",
+      "title": "Agent 工单工具越权/重试双写",
+      "topics": [
+        "PM07",
+        "AI05",
+        "AI06",
+        "AI08",
+        "ENG07",
+        "ENG08",
+        "AI12",
+        "OPS02"
+      ],
+      "failure_cases": "工具超时、重复重放、未审批写入、恶意工具返回内容",
+      "done": "所有安全硬门禁通过、审批前零写入、trace 可回放",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "solo-ai-site",
+      "title": "个人 AI 网站从 MVP 到长期可用",
+      "topics": [
+        "PM02",
+        "PM08",
+        "ENG01",
+        "ENG02",
+        "ENG03",
+        "ENG04",
+        "ENG06",
+        "ENG11",
+        "ENG12",
+        "ENG13",
+        "OPS01",
+        "OPS06"
+      ],
+      "failure_cases": "Next.js/FastAPI 部署边界、SEO、用户注册/内容/AI 功能",
+      "done": "干净部署+AuthZ+备份恢复+发布回滚+真实UAT证据分级",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "paid-ai-saas",
+      "title": "AI SaaS 订阅与可靠交付",
+      "topics": [
+        "PM03",
+        "BIZ01",
+        "BIZ02",
+        "BIZ03",
+        "ENG06",
+        "ENG04",
+        "AI13",
+        "OPS03",
+        "OPS04",
+        "OPS05"
+      ],
+      "failure_cases": "计费幂等、取消、退款、成本翻倍、隐私删除",
+      "done": "账单/数据隔离与成本控制的合成测试，无付费证明不得商业升级",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ai-product-metrics",
+      "title": "AI 产品效果与增长掉队",
+      "topics": [
+        "DATA01",
+        "DATA02",
+        "DATA03",
+        "AI11",
+        "AI13",
+        "PM09"
+      ],
+      "failure_cases": "高 DAU 但低成功率，实验样本不足、模型版本变化",
+      "done": "埋点字典+分母+预注册指标+反事实分析",
+      "status": "DESIGNED_NOT_RUN"
+    }
+  ]
+}

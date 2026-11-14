@@ -1,0 +1,1030 @@
+{
+  "schema": "2.0",
+  "updated_on": "2026-11-14",
+  "purpose": "demand-driven, non-linear, deployable product knowledge coverage",
+  "learning_state": "NOT_RUN",
+  "topics": [
+    {
+      "id": "PM01",
+      "name": "角色分工与生命周期",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "识别问题-决策-交付-复盘的责任",
+      "requires": [],
+      "resources": [
+        "S01",
+        "S02"
+      ],
+      "exercise": "画出 PM/PE/设计/研发/销售的责任图并指出灰区",
+      "evidence": "一份冲突决策表和验收责任人",
+      "trigger": "需求归属不明",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM02",
+      "name": "问题定义与 JTBD",
+      "domain": "product",
+      "role": "PM",
+      "why": "把功能需求翻译成用户待完成任务",
+      "requires": [
+        "PM01"
+      ],
+      "resources": [
+        "S01",
+        "S04"
+      ],
+      "exercise": "从三条功能请求提炼任务/触发场景/成功行为",
+      "evidence": "包含不做条件和失败反例的问题卡",
+      "trigger": "用户只说要某功能",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM03",
+      "name": "访谈与行为证据",
+      "domain": "product",
+      "role": "PM",
+      "why": "获得可以推翻假设的真实/合成事实",
+      "requires": [
+        "PM02"
+      ],
+      "resources": [
+        "S01",
+        "S04"
+      ],
+      "exercise": "写非诱导访谈脚本并对照行为/陈述",
+      "evidence": "事实/推断/假设台账及证据等级",
+      "trigger": "不知道用户是否真的有痛点",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM04",
+      "name": "竞品与替代方案",
+      "domain": "product",
+      "role": "PM",
+      "why": "人工/旧系统/不用 AI 都是竞争",
+      "requires": [
+        "PM02"
+      ],
+      "resources": [
+        "S01",
+        "S03"
+      ],
+      "exercise": "比较人工、规则、搜索、AI 并列反证",
+      "evidence": "替代方案矩阵与停止门槛",
+      "trigger": "不知道要不要做 AI",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM05",
+      "name": "价值主张与市场细分",
+      "domain": "product",
+      "role": "PM",
+      "why": "确认谁痛、频率、可触达性及买方",
+      "requires": [
+        "PM03",
+        "PM04"
+      ],
+      "resources": [
+        "S01",
+        "S03"
+      ],
+      "exercise": "区分用户/买方/采购责任，分场景估算触达",
+      "evidence": "一张证据标注的细分/价值卡",
+      "trigger": "有使用者却无买家",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM06",
+      "name": "优先级与路线图",
+      "domain": "product",
+      "role": "PM",
+      "why": "确定先解决哪个风险而非堆功能",
+      "requires": [
+        "PM04",
+        "PM05"
+      ],
+      "resources": [
+        "S03"
+      ],
+      "exercise": "以 RICE 与明确约束各排一次同一需求，说明差异",
+      "evidence": "Now/Next/Later 决策与资源 Stop Rule",
+      "trigger": "需求太多排不开",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM07",
+      "name": "PRD/用户故事/验收",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "把模糊目标变可测试行为",
+      "requires": [
+        "PM02"
+      ],
+      "resources": [
+        "S02"
+      ],
+      "exercise": "完成一页 PRD + Given/When/Then 正负场景",
+      "evidence": "可供他人不猜测地写测试的需求文档",
+      "trigger": "研发总是返工",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM08",
+      "name": "信息架构/原型/UI 状态",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "从任务流设计空态/失败/等待/恢复",
+      "requires": [
+        "PM07"
+      ],
+      "resources": [
+        "S04",
+        "S09"
+      ],
+      "exercise": "做两版低保真任务流和错误态原型",
+      "evidence": "用户可观察任务结果与无障碍检查表",
+      "trigger": "界面能点但不能用",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM09",
+      "name": "AI 信任与可控 UX",
+      "domain": "product",
+      "role": "PM",
+      "why": "解释来源、错误、能力边界与人工控制",
+      "requires": [
+        "PM08",
+        "AI01"
+      ],
+      "resources": [
+        "S04",
+        "S22"
+      ],
+      "exercise": "设计引用/拒答/反馈/人工接管的三条流程",
+      "evidence": "失败提示及真实/合成可用性测试记录",
+      "trigger": "用户被幻觉误导",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM10",
+      "name": "交付协作/范围与变更",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "定义变更责任、发布门禁与冲突处理",
+      "requires": [
+        "PM07"
+      ],
+      "resources": [
+        "S02",
+        "S03"
+      ],
+      "exercise": "模拟需求变更影响排期、权限、成本并作 ADR",
+      "evidence": "变更前后 UAT 与审批记录",
+      "trigger": "跨团队联调失控",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM11",
+      "name": "客户成功/支持运营",
+      "domain": "product",
+      "role": "PM",
+      "why": "将故障/投诉转成可重现事实与服务闭环",
+      "requires": [
+        "PM09",
+        "OPS02"
+      ],
+      "resources": [
+        "S04",
+        "S16"
+      ],
+      "exercise": "构建合成支持工单分级/升级/闭环规则",
+      "evidence": "优先级、响应预案、重复故障分析",
+      "trigger": "产品上线无人维护",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM12",
+      "name": "产品策略与 Portfolio 决策",
+      "domain": "product",
+      "role": "PM",
+      "why": "判断多个产品/渠道哪个该停",
+      "requires": [
+        "PM06",
+        "BIZ01"
+      ],
+      "resources": [
+        "S03",
+        "S01"
+      ],
+      "exercise": "三候选预算减半时选唯一试验并解释淘汰项",
+      "evidence": "资源配置和机会成本记录",
+      "trigger": "产品堆积没有方向",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI01",
+      "name": "LLM 基础与上下文/Token",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "理解生成不确定性、输入预算和限制",
+      "requires": [
+        "PM02"
+      ],
+      "resources": [
+        "S19",
+        "S05"
+      ],
+      "exercise": "同题短/长上下文比较结构化输出与 Token/成本",
+      "evidence": "输入-输出-成本与失败报告",
+      "trigger": "模型效果不稳定",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI02",
+      "name": "Prompt/结构化输出",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "实现可校验输出而非靠自然语言猜测",
+      "requires": [
+        "AI01"
+      ],
+      "resources": [
+        "S05",
+        "S19"
+      ],
+      "exercise": "为合成分类任务比较规则/Prompt + JSON schema 校验",
+      "evidence": "字段校验通过率和坏例日志",
+      "trigger": "JSON 经常不合法",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI03",
+      "name": "Embedding/检索与 RAG",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "区分索引、召回、排序、生成和证据",
+      "requires": [
+        "AI01",
+        "ENG04"
+      ],
+      "resources": [
+        "S19",
+        "S17"
+      ],
+      "exercise": "在公开小语料比较 BM25/向量/混检并分层评测",
+      "evidence": "检索金标、引用支持、拒答与版本失败",
+      "trigger": "知识库引用错误",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI04",
+      "name": "RAG 数据治理/文档生命周期",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "处理来源许可、权限、更新、删除与版本",
+      "requires": [
+        "AI03",
+        "ENG06"
+      ],
+      "resources": [
+        "S07",
+        "S17"
+      ],
+      "exercise": "模拟文档撤销权限、版本更新、删除后不可检索",
+      "evidence": "越权/旧版/删除负例",
+      "trigger": "知识库过期或越权",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI05",
+      "name": "工具调用/Workflow/单 Agent",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "知道什么时候让模型决策、什么时候固定流程",
+      "requires": [
+        "AI02",
+        "ENG03"
+      ],
+      "resources": [
+        "S06",
+        "S17"
+      ],
+      "exercise": "Mock 工单比较规则链与工具 Agent 的正确率/成本",
+      "evidence": "审批前无写入、超时与错误恢复",
+      "trigger": "智能体乱调用工具",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI06",
+      "name": "MCP/工具权限与副作用",
+      "domain": "ai",
+      "role": "PE",
+      "why": "工具连接不代表可以越权执行",
+      "requires": [
+        "AI05",
+        "ENG06"
+      ],
+      "resources": [
+        "S18",
+        "S08"
+      ],
+      "exercise": "在隔离工具沙箱检查 schema、租户权限、审批、审计",
+      "evidence": "未授权拒绝、无副作用、版本兼容性记录",
+      "trigger": "MCP 接入后权限混乱",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI07",
+      "name": "Context Engineering/Memory",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "在正确时机给模型正确的上下文与工具",
+      "requires": [
+        "AI01",
+        "AI05"
+      ],
+      "resources": [
+        "S17",
+        "S06"
+      ],
+      "exercise": "对比上下文裁剪、版本过滤、checkpoint 恢复",
+      "evidence": "同测试集效果/Token/恢复负例",
+      "trigger": "Agent 忘记状态或读错资料",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI08",
+      "name": "Harness/Agent 执行治理",
+      "domain": "ai",
+      "role": "PE",
+      "why": "任务边界、预算、重试、停止、人工介入与恢复",
+      "requires": [
+        "AI05",
+        "AI07",
+        "OPS02"
+      ],
+      "resources": [
+        "S06",
+        "S17"
+      ],
+      "exercise": "强制工具失败/循环上限/断点重启，证明 fail-closed",
+      "evidence": "可重复 Trace、停止与恢复断言",
+      "trigger": "长任务循环失控",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI09",
+      "name": "多 Agent 编排与人机协作",
+      "domain": "ai",
+      "role": "PE",
+      "why": "只有单 Agent 证据不足才增加角色协作",
+      "requires": [
+        "AI08"
+      ],
+      "resources": [
+        "S06",
+        "S17"
+      ],
+      "exercise": "比较单/多 Agent 的成功率与维护成本，回放交接失败",
+      "evidence": "消融报告与责任边界",
+      "trigger": "多 Agent 项目效率低",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI10",
+      "name": "多模态/OCR/语音/图片",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "处理上游识别错误与人工纠错",
+      "requires": [
+        "AI01"
+      ],
+      "resources": [
+        "S19",
+        "S04"
+      ],
+      "exercise": "用公开/合成样本比较 OCR 错误如何影响最终任务",
+      "evidence": "端到端分母与人工纠错数据",
+      "trigger": "需要解析图片文档",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI11",
+      "name": "AI Eval/金标/回归",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "把效果变成可复算的质量门禁",
+      "requires": [
+        "AI01",
+        "PM07"
+      ],
+      "resources": [
+        "S05",
+        "S07"
+      ],
+      "exercise": "建立正常/边界/对抗/拒答集并审计 LLM judge 偏差",
+      "evidence": "金标版本/分母/标注与回归报告",
+      "trigger": "模型升级怕回退",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI12",
+      "name": "AI 安全/Prompt Injection/模型治理",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "隔离不可信上下文与高风险工具",
+      "requires": [
+        "AI05",
+        "AI11",
+        "ENG06"
+      ],
+      "resources": [
+        "S07",
+        "S08"
+      ],
+      "exercise": "设计注入/越权/数据外泄/过度代理负例",
+      "evidence": "无未授权副作用的安全测试证据",
+      "trigger": "用户输入能改变 Agent 权限",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI13",
+      "name": "模型选型/推理与成本",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "按质量、时延、成本、隐私与可迁移性选模型",
+      "requires": [
+        "AI01",
+        "AI11"
+      ],
+      "resources": [
+        "S05",
+        "S19"
+      ],
+      "exercise": "相同金标对比两方案端到端成功任务成本/P95",
+      "evidence": "选型 ADR 和不确定性",
+      "trigger": "API 太贵或太慢",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "AI14",
+      "name": "微调/后训练选型判断",
+      "domain": "ai",
+      "role": "PM/PE",
+      "why": "知道何时 RAG/Prompt 不够、是否值得训练",
+      "requires": [
+        "AI11",
+        "AI13"
+      ],
+      "resources": [
+        "S19",
+        "S05"
+      ],
+      "exercise": "对错误类型分类，比较不训练/微调的投入与效益",
+      "evidence": "门槛与数据许可/离线评测方案",
+      "trigger": "是否该做 LoRA/SFT",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG01",
+      "name": "Web/HTTP/DNS/TLS",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "理解浏览器→代理→服务的请求路径",
+      "requires": [
+        "PM07"
+      ],
+      "resources": [
+        "S10",
+        "S12"
+      ],
+      "exercise": "画从浏览器到后端请求链并定位 401/502/超时",
+      "evidence": "请求/响应抓包与原因分析",
+      "trigger": "网站上线 API 不通",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG02",
+      "name": "前端组件/状态/TypeScript",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "保证数据展示、交互与错误状态一致",
+      "requires": [
+        "ENG01",
+        "PM08"
+      ],
+      "resources": [
+        "S14",
+        "S21"
+      ],
+      "exercise": "搭建可交互表单，注入失败/重复点击/刷新",
+      "evidence": "前端状态测试和构建日志",
+      "trigger": "网页更新状态混乱",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG03",
+      "name": "API 契约与输入验证",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "设计清晰请求/响应和错误边界",
+      "requires": [
+        "ENG01",
+        "PM07"
+      ],
+      "resources": [
+        "S10",
+        "S11"
+      ],
+      "exercise": "写三接口 schema，覆盖非法输入、错误与幂等键",
+      "evidence": "OpenAPI/集成测试与日志",
+      "trigger": "前后端契约漂移",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG04",
+      "name": "SQL/事务/迁移",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "持久化数据并在失败时保持一致",
+      "requires": [
+        "ENG03"
+      ],
+      "resources": [
+        "S13"
+      ],
+      "exercise": "模拟事务失败、回滚、唯一索引与迁移降级",
+      "evidence": "事务与迁移回滚测试",
+      "trigger": "数据刷新后丢失",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG05",
+      "name": "数据模型/对象存储/缓存",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "区分结构化数据、文件、缓存的一致性责任",
+      "requires": [
+        "ENG04"
+      ],
+      "resources": [
+        "S13",
+        "S12"
+      ],
+      "exercise": "用合成文档测数据版本与缓存失效",
+      "evidence": "TTL/删除/备份策略和过期负例",
+      "trigger": "数据与缓存不同步",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG06",
+      "name": "AuthN/AuthZ/多租户隔离",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "身份验证不等于授权；每个数据读写检查权限",
+      "requires": [
+        "ENG03",
+        "ENG04"
+      ],
+      "resources": [
+        "S11",
+        "S08"
+      ],
+      "exercise": "用户 A 与 B 交叉读写、伪造角色与过期令牌",
+      "evidence": "横向越权测试和审计",
+      "trigger": "跨租户泄漏",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG07",
+      "name": "异步任务/队列/SSE/状态",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "处理长任务、重试、状态转移与前端反馈",
+      "requires": [
+        "ENG03",
+        "ENG04"
+      ],
+      "resources": [
+        "S10",
+        "S17"
+      ],
+      "exercise": "Mock 长任务重复执行/中断/重新连接",
+      "evidence": "幂等+状态恢复+前端错误态测试",
+      "trigger": "Agent 工单重复处理",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG08",
+      "name": "分布式可靠性与故障恢复",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "掌握超时/重试/限流/熔断/幂等/退避",
+      "requires": [
+        "ENG07"
+      ],
+      "resources": [
+        "S12",
+        "S16"
+      ],
+      "exercise": "模拟 429/500、网络断开、死信与重复消息",
+      "evidence": "可控故障注入与恢复证据",
+      "trigger": "上线后偶发卡死",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG09",
+      "name": "测试金字塔与契约测试",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "用单元/集成/E2E/安全负例锁定行为",
+      "requires": [
+        "ENG03",
+        "PM07"
+      ],
+      "resources": [
+        "S14",
+        "S12"
+      ],
+      "exercise": "为主流程加两条失败场景和一条 E2E",
+      "evidence": "测试命令、版本与失败报告",
+      "trigger": "改代码总回归",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG10",
+      "name": "Web 安全/输入/依赖供应链",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "覆盖常见 Web 攻击、依赖风险与敏感配置",
+      "requires": [
+        "ENG06",
+        "ENG09"
+      ],
+      "resources": [
+        "S08",
+        "S23"
+      ],
+      "exercise": "执行授权/注入/泄密测试与依赖清单审查",
+      "evidence": "无硬失败的安全负例",
+      "trigger": "应用存在安全漏洞",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG11",
+      "name": "容器/环境与配置管理",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "在新环境稳定启动并区分配置与密钥",
+      "requires": [
+        "ENG03",
+        "ENG04"
+      ],
+      "resources": [
+        "S12",
+        "S15"
+      ],
+      "exercise": "干净环境 Docker Compose 启动/重启并拒绝缺密钥",
+      "evidence": "复现、健康检查、重启与日志",
+      "trigger": "本地能跑服务器跑不了",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG12",
+      "name": "部署拓扑与架构演化",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "选单体、模块化和服务拆分的迁移边界",
+      "requires": [
+        "ENG11",
+        "PM06"
+      ],
+      "resources": [
+        "S14",
+        "S21"
+      ],
+      "exercise": "用 ADR 比较 Next.js 全栈、FastAPI、BFF、拆服务成本",
+      "evidence": "部署图、数据边界与可逆迁移演练",
+      "trigger": "担心 MVP 后迁移成本",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG13",
+      "name": "前端 SEO/性能/可访问性",
+      "domain": "engineering",
+      "role": "PM/PE",
+      "why": "确保公开站点可被发现、可访问、可用",
+      "requires": [
+        "ENG02"
+      ],
+      "resources": [
+        "S14",
+        "S09"
+      ],
+      "exercise": "测关键路径的性能/语义/键盘操作和错误状态",
+      "evidence": "Lighthouse/人工辅助验收记录（按任务定阈）",
+      "trigger": "网站慢/搜索收录差",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ENG14",
+      "name": "API 文档/版本化/兼容性",
+      "domain": "engineering",
+      "role": "PE",
+      "why": "防止前后端与外部集成被破坏",
+      "requires": [
+        "ENG03",
+        "ENG09"
+      ],
+      "resources": [
+        "S10",
+        "S12"
+      ],
+      "exercise": "旧客户端回放，新版本新增字段/删除字段对照",
+      "evidence": "兼容性案例与变更计划",
+      "trigger": "上线后旧客户端挂掉",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "OPS01",
+      "name": "CI/CD/Release/回滚",
+      "domain": "operations",
+      "role": "PE",
+      "why": "保障从提交到发布的证据链",
+      "requires": [
+        "ENG09",
+        "ENG11"
+      ],
+      "resources": [
+        "S14",
+        "S15"
+      ],
+      "exercise": "在测试环境跑构建/测试/迁移检查/回滚演练",
+      "evidence": "CI run、固定 SHA、部署与回滚记录",
+      "trigger": "上线出问题不会回退",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "OPS02",
+      "name": "日志/Trace/指标/SLI-SLO",
+      "domain": "operations",
+      "role": "PM/PE",
+      "why": "从症状定位检索/模型/工具/数据库瓶颈",
+      "requires": [
+        "ENG03"
+      ],
+      "resources": [
+        "S16"
+      ],
+      "exercise": "为请求串联 trace_id, 隐去 PII 并模拟超时定位",
+      "evidence": "Trace、告警与用户视角 SLI",
+      "trigger": "线上故障无法排查",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "OPS03",
+      "name": "容量/压测/成本上限",
+      "domain": "operations",
+      "role": "PE",
+      "why": "识别瓶颈与安全容量，不只看单次延迟",
+      "requires": [
+        "OPS02",
+        "ENG08"
+      ],
+      "resources": [
+        "S12",
+        "S16"
+      ],
+      "exercise": "合成压测并记录 P95/错误率/调用成本",
+      "evidence": "负载曲线和容量保护决策",
+      "trigger": "20 并发就崩",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "OPS04",
+      "name": "备份/恢复/事故响应",
+      "domain": "operations",
+      "role": "PE",
+      "why": "恢复数据与服务且留下审计复盘",
+      "requires": [
+        "ENG04",
+        "OPS01"
+      ],
+      "resources": [
+        "S12",
+        "S15"
+      ],
+      "exercise": "测试备份恢复、机密泄露撤销/密钥轮换预案",
+      "evidence": "恢复演练日志与 RPO/RTO 假设",
+      "trigger": "上线后数据丢失",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "OPS05",
+      "name": "数据隐私/合规/删除与审计",
+      "domain": "operations",
+      "role": "PM/PE",
+      "why": "权利、使用许可、最小化与数据生命周期",
+      "requires": [
+        "ENG06",
+        "AI12"
+      ],
+      "resources": [
+        "S07",
+        "S08"
+      ],
+      "exercise": "模拟撤回授权/删除数据与日志保留冲突",
+      "evidence": "授权矩阵、删除演练与审计边界",
+      "trigger": "用户要求删除聊天数据",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "OPS06",
+      "name": "真实用户 UAT/发布与维护门禁",
+      "domain": "operations",
+      "role": "PM/PE",
+      "why": "可运行不等于经用户验证/可长期运营",
+      "requires": [
+        "OPS01",
+        "OPS02",
+        "PM09",
+        "AI11"
+      ],
+      "resources": [
+        "S04",
+        "S16"
+      ],
+      "exercise": "执行干净环境 UAT+故障注入，列责任/回滚/值班",
+      "evidence": "发布包，明确证据和未证实项",
+      "trigger": "如何判断可以真正上线",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "DATA01",
+      "name": "事件埋点/北极星/漏斗",
+      "domain": "data",
+      "role": "PM",
+      "why": "度量真实用户价值而不是请求数",
+      "requires": [
+        "PM02"
+      ],
+      "resources": [
+        "S20"
+      ],
+      "exercise": "定义 task_started/completed 与转化分母",
+      "evidence": "事件字典及合成样本复算",
+      "trigger": "产品有流量没价值",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "DATA02",
+      "name": "Cohort 留存与归因",
+      "domain": "data",
+      "role": "PM",
+      "why": "分析用户是否反复获得价值及偏差",
+      "requires": [
+        "DATA01"
+      ],
+      "resources": [
+        "S20"
+      ],
+      "exercise": "计算按 cohort 留存，解释抽样偏差与数据缺失",
+      "evidence": "SQL/电子表样例与分母",
+      "trigger": "用户第二天不回来",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "DATA03",
+      "name": "实验设计/A-B/反事实",
+      "domain": "data",
+      "role": "PM",
+      "why": "区分相关与因果、守门指标与提前停止风险",
+      "requires": [
+        "DATA01",
+        "PM06"
+      ],
+      "resources": [
+        "S20",
+        "S01"
+      ],
+      "exercise": "预注册实验假设、样本、指标、守门与停止规则",
+      "evidence": "合成分析报告不冒充线上提升",
+      "trigger": "改版后不知道有效吗",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "BIZ01",
+      "name": "Buyer/采购/价值与定价",
+      "domain": "business",
+      "role": "PM",
+      "why": "真正知道谁可以付费、以什么单位付费",
+      "requires": [
+        "PM05"
+      ],
+      "resources": [
+        "S01",
+        "S03"
+      ],
+      "exercise": "画买方/用户/审批/采购图，列定价验证途径",
+      "evidence": "买方验证计划、未知项与停止条件",
+      "trigger": "用户说好却无人付款",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "BIZ02",
+      "name": "单位经济/CAC/LTV/现金流",
+      "domain": "business",
+      "role": "PM",
+      "why": "避免以贡献毛利冒充净利润或获客/收入事实",
+      "requires": [
+        "BIZ01",
+        "DATA02"
+      ],
+      "resources": [
+        "S20",
+        "S03"
+      ],
+      "exercise": "用三档情景计算单成功任务成本、贡献毛利和回本假设",
+      "evidence": "带分母和敏感性的情景表",
+      "trigger": "产品用得越多越赔",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "BIZ03",
+      "name": "支付/订阅/计费需求设计",
+      "domain": "business",
+      "role": "PM/PE",
+      "why": "买方报价到技术账单/退款/对账的边界",
+      "requires": [
+        "BIZ01",
+        "ENG06",
+        "ENG04"
+      ],
+      "resources": [
+        "S13",
+        "S08"
+      ],
+      "exercise": "合成支付 webhook 乱序/重复与套餐权限切换",
+      "evidence": "对账/幂等/取消/退款需求和负例",
+      "trigger": "订阅重复扣费",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "BIZ04",
+      "name": "渠道/增长/留存商业验证",
+      "domain": "business",
+      "role": "PM",
+      "why": "找到可触达渠道而非只看总用户规模",
+      "requires": [
+        "BIZ01",
+        "DATA01"
+      ],
+      "resources": [
+        "S01",
+        "S20"
+      ],
+      "exercise": "设计一项小规模可逆获客假设与转化衡量",
+      "evidence": "样本分母、渠道成本及停止条件",
+      "trigger": "产品做完没人来",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "BIZ05",
+      "name": "产品组合/Go-to-market/客户支持",
+      "domain": "business",
+      "role": "PM",
+      "why": "承诺范围、交付、支持和升级路径",
+      "requires": [
+        "BIZ01",
+        "PM11"
+      ],
+      "resources": [
+        "S03",
+        "S01"
+      ],
+      "exercise": "模拟试点条款、交付/支持边界、成功/失败定义",
+      "evidence": "可审查试点计划与非目标",
+      "trigger": "成交后交付失控",
+      "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "ETH01",
+      "name": "可访问性/公平性/可信产品",
+      "domain": "governance",
+      "role": "PM/PE",
+      "why": "识别被忽视的用户群、误导与伤害",
+      "requires": [
+        "PM08",
+        "AI11"
+      ],
+      "resources": [
+        "S09",
+        "S07"
+      ],
+      "exercise": "设计对抗/边缘用户与人工接管样本",
+      "evidence": "可测试公平性/可用性风险记录",
+      "trigger": "AI 产品误伤用户",
+      "status": "DESIGNED_NOT_RUN"
+    }
+  ]
+}
