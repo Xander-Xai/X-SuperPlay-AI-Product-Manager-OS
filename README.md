@@ -2,11 +2,17 @@
 
 **AI Product Manager × AI Product Engineer：知识全景、需求驱动学习、真实交付能力**
 
-> v0.2.0 · 2026-11-14 · CURRICULUM_DESIGNED / PRACTICE_NOT_RUN / HUMAN_UNASSESSED。**知识覆盖完整不等于已经学会，仓库文档 CI 通过不等于任何产品已上线。**
+> v0.3.0 · 2026-11-14 · CURRICULUM_DESIGNED / PRACTICE_NOT_RUN / HUMAN_UNASSESSED。**知识覆盖完整不等于已经学会，仓库文档 CI 通过不等于任何产品已上线。**
 
 ## 核心学习观
 
 **不是课程从 0 → 1 → 2 机械刷完。** 完整知识关系图告诉你学什么、为什么、彼此怎么关联；当真实需求出现时，只定位必要知识和缺口，读权威资料、做最小实验、用独立负例验收。知识内容能覆盖真实上线所需能力，却不要求学习仓变成某个下游项目仓。
+
+## 最新 V3：一张知识地图 + 实际问题直达 + 专业/白话对照
+
+**认知目标**：看到整个产品生命周期、四类产品风险、管理/财务/销售/Founder/行业知识之间的逻辑；**执行目标**：今天哪里不会就先学哪里，用理论与实际反例建立能力。
+
+[专业×大白话入门](docs/atlas/product-manager-primer.md) · [四张可渲染关系图](docs/atlas/product-lifecycle-mermaid.md) · [上游 22 组真实资料路径](resources/upstream-pm-knowledge-index.md) · [非线性学习 SOP](docs/learning/point-to-system-method.md)。
 
 ## 四个入口
 

@@ -1,0 +1,316 @@
+{
+  "schema": "1.0",
+  "checked_on": "2026-11-14",
+  "source_repo": "Xander-Xai/X-SuperPlay-AI-Learning-OS",
+  "source_visibility": "PRIVATE",
+  "policy": "public index contains only document paths/subjects; original source remains private; no automatic sync, no completion claims",
+  "references": [
+    {
+      "id": "UP01",
+      "area": "管理八域",
+      "path": "docs/market/management-demand-to-practice-20261029.md",
+      "why": "战略、经营、财务、项目、组织、客户、流程风险、自我管理",
+      "target_ids": [
+        "MGT01",
+        "MGT02",
+        "MGT03",
+        "MGT04",
+        "MGT05",
+        "PM16",
+        "PM18"
+      ],
+      "status": "课程/需求协议；非实践完成",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/market/management-demand-to-practice-20261029.md"
+    },
+    {
+      "id": "UP02",
+      "area": "管理条件式 Roadmap",
+      "path": "docs/career/management-market-roadmap-20261029.md",
+      "why": "真实管理失败驱动角色与能力提升",
+      "target_ids": [
+        "MGT01",
+        "MGT02",
+        "MGT03"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/career/management-market-roadmap-20261029.md"
+    },
+    {
+      "id": "UP03",
+      "area": "管理练习",
+      "path": "docs/tracks/project-driven/ai-native-management-market-track-20261029.md",
+      "why": "反方角色演练、项目决策、独立复核",
+      "target_ids": [
+        "MGT01",
+        "MGT02",
+        "MGT05"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/tracks/project-driven/ai-native-management-market-track-20261029.md"
+    },
+    {
+      "id": "UP04",
+      "area": "Founder 产品机会",
+      "path": "docs/career/problem-founder-market-roadmap-20261029.md",
+      "why": "问题、买方、验证、Offer、经营风险",
+      "target_ids": [
+        "PM02",
+        "PM05",
+        "BIZ06",
+        "BIZ08",
+        "COG01"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/career/problem-founder-market-roadmap-20261029.md"
+    },
+    {
+      "id": "UP05",
+      "area": "Founder 需求到能力",
+      "path": "docs/market/problem-to-capability-learning-loop-20261029.md",
+      "why": "市场线索、证据分层、问题反向技能学习",
+      "target_ids": [
+        "PM13",
+        "COG01",
+        "MGT05"
+      ],
+      "status": "DESIGNED_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/market/problem-to-capability-learning-loop-20261029.md"
+    },
+    {
+      "id": "UP06",
+      "area": "营销与销售路线",
+      "path": "docs/career/marketing-sales-market-roadmap-20261029.md",
+      "why": "ICP、渠道、销售、验证",
+      "target_ids": [
+        "BIZ06",
+        "BIZ10",
+        "DATA04"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/career/marketing-sales-market-roadmap-20261029.md"
+    },
+    {
+      "id": "UP07",
+      "area": "营销销售 16 域",
+      "path": "docs/market/marketing-sales-demand-to-practice-20261029.md",
+      "why": "渠道、漏斗、定价、线索与实战",
+      "target_ids": [
+        "BIZ06",
+        "BIZ10",
+        "BIZ11",
+        "DATA04"
+      ],
+      "status": "DESIGNED_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/market/marketing-sales-demand-to-practice-20261029.md"
+    },
+    {
+      "id": "UP08",
+      "area": "商业与财富经营 12 域",
+      "path": "docs/career/wealth-business-market-roadmap-20261029.md",
+      "why": "商业模式、单位经济、现金流、交付、财税风险",
+      "target_ids": [
+        "BIZ08",
+        "BIZ09",
+        "BIZ12",
+        "MGT01"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/career/wealth-business-market-roadmap-20261029.md"
+    },
+    {
+      "id": "UP09",
+      "area": "商业认知与判断",
+      "path": "docs/career/cognition-business-market-roadmap-20261029.md",
+      "why": "因果、预测校准、机会识别和复盘",
+      "target_ids": [
+        "COG01",
+        "COG02",
+        "COG03",
+        "MGT05"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/career/cognition-business-market-roadmap-20261029.md"
+    },
+    {
+      "id": "UP10",
+      "area": "企业财务与经济",
+      "path": "docs/career/finance-economics-market-roadmap-20261029.md",
+      "why": "预算、现金流与经济决策的知识链接",
+      "target_ids": [
+        "BIZ09"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/career/finance-economics-market-roadmap-20261029.md"
+    },
+    {
+      "id": "UP11",
+      "area": "行业与采购实践",
+      "path": "docs/career/industry-insider-market-roadmap-20261029.md",
+      "why": "行业语境、B2B 采购、交付与谈判",
+      "target_ids": [
+        "GO01",
+        "BIZ07"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/career/industry-insider-market-roadmap-20261029.md"
+    },
+    {
+      "id": "UP12",
+      "area": "SaaS 开发交付",
+      "path": "docs/playbooks/saas-business-system.md",
+      "why": "内部后台、定制系统、订阅 SaaS 的差异与八道交付门",
+      "target_ids": [
+        "PM21",
+        "BIZ12",
+        "GO02"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/playbooks/saas-business-system.md"
+    },
+    {
+      "id": "UP13",
+      "area": "产品工程判断",
+      "path": "docs/market/product-engineering-demand-to-practice-20261029.md",
+      "why": "市场到 Gap、独立证据、产品可交付性",
+      "target_ids": [
+        "PM17",
+        "PM22"
+      ],
+      "status": "DESIGNED_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/market/product-engineering-demand-to-practice-20261029.md"
+    },
+    {
+      "id": "UP14",
+      "area": "管理研究 GitHub 索引",
+      "path": "docs/sources/ai-native-management-research-20261029.md",
+      "why": "项目/组织管理模拟和 AI 教练来源；项目未安装",
+      "target_ids": [
+        "MGT02",
+        "MGT03",
+        "MGT05"
+      ],
+      "status": "RESEARCH_README_ONLY",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/sources/ai-native-management-research-20261029.md"
+    },
+    {
+      "id": "UP15",
+      "area": "Founder 研究 GitHub 索引",
+      "path": "docs/sources/ai-native-problem-founder-research-20261029.md",
+      "why": "PM Skills、Founder Skills、买方验证工具候选",
+      "target_ids": [
+        "PM13",
+        "BIZ06",
+        "BIZ08"
+      ],
+      "status": "RESEARCH_README_ONLY",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/sources/ai-native-problem-founder-research-20261029.md"
+    },
+    {
+      "id": "UP16",
+      "area": "产品工程技术路线",
+      "path": "docs/career/ai-product-engineer-roadmap-20261028.md",
+      "why": "PM 和 PE 的角色协作、交付横向能力",
+      "target_ids": [
+        "PM17",
+        "PM21"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/career/ai-product-engineer-roadmap-20261028.md"
+    },
+    {
+      "id": "UP17",
+      "area": "企业产品工程实战",
+      "path": "docs/tracks/project-driven/ai-native-product-engineering-market-track.md",
+      "why": "跨产品、工程、AI、商业的任务例与风险门禁",
+      "target_ids": [
+        "PM22",
+        "GO02"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/tracks/project-driven/ai-native-product-engineering-market-track.md"
+    },
+    {
+      "id": "UP18",
+      "area": "营销漏斗合成实验",
+      "path": "docs/labs/marketing-sales-funnel-20261029/README.md",
+      "why": "漏斗分母与销售数据演习（非真实成交）",
+      "target_ids": [
+        "BIZ10",
+        "DATA04"
+      ],
+      "status": "LAB_README_ONLY",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/labs/marketing-sales-funnel-20261029/README.md"
+    },
+    {
+      "id": "UP19",
+      "area": "财富与商业研究",
+      "path": "docs/sources/ai-native-wealth-business-research-20261029.md",
+      "why": "经济性、现金与商业模型资料候选",
+      "target_ids": [
+        "BIZ09",
+        "BIZ11"
+      ],
+      "status": "RESEARCH_NOT_EXECUTED",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/sources/ai-native-wealth-business-research-20261029.md"
+    },
+    {
+      "id": "UP20",
+      "area": "管理独立考核",
+      "path": "docs/assessments/management-independent-rubric.md",
+      "why": "管理决策的独立判断与变式考核",
+      "target_ids": [
+        "MGT01",
+        "MGT02",
+        "MGT05"
+      ],
+      "status": "RUBRIC_DESIGNED",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/assessments/management-independent-rubric.md"
+    },
+    {
+      "id": "UP21",
+      "area": "社会商业交往",
+      "path": "docs/career/social-business-market-roadmap-20261029.md",
+      "why": "客户沟通、谈判、信任与权限边界",
+      "target_ids": [
+        "BIZ07",
+        "MGT03"
+      ],
+      "status": "PLAN_NOT_RUN",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/career/social-business-market-roadmap-20261029.md"
+    },
+    {
+      "id": "UP22",
+      "area": "多产品经营与真实商业边界",
+      "path": "docs/market/buyer-order-evidence-gap-2026-10-25.md",
+      "why": "买家线索不等于订单，商业证据分层",
+      "target_ids": [
+        "BIZ06",
+        "BIZ08"
+      ],
+      "status": "HISTORICAL_REVIEW_REQUIRED",
+      "visibility": "PRIVATE",
+      "url": "https://github.com/Xander-Xai/X-SuperPlay-AI-Learning-OS/blob/main/docs/market/buyer-order-evidence-gap-2026-10-25.md"
+    }
+  ]
+}

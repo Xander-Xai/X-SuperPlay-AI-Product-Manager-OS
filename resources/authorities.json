@@ -218,6 +218,150 @@
       "quality": "框架官方教程；条件触发时深入",
       "checked_on": "2026-11-14",
       "status": "PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S25",
+      "area": "expanded-product-management",
+      "title": "SVPG 产品经理与四大风险",
+      "url": "https://www.svpg.com/product-management-an-introduction/",
+      "quality": "SVPG 原作者产品方法介绍",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S26",
+      "area": "expanded-product-management",
+      "title": "SVPG 产品运营模式",
+      "url": "https://www.svpg.com/the-product-operating-model-an-introduction/",
+      "quality": "跨职能团队、发现与交付",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S27",
+      "area": "expanded-product-management",
+      "title": "Product Talk 产品发现概念",
+      "url": "https://www.producttalk.org/glossary-discovery-product-discovery/",
+      "quality": "作者对 Discovery 的定义与工作循环",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S28",
+      "area": "expanded-product-management",
+      "title": "Opportunity Solution Tree / 持续发现",
+      "url": "https://www.producttalk.org/getting-started-with-discovery/",
+      "quality": "作者方法论；结果-机会-方案-假设",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S29",
+      "area": "expanded-product-management",
+      "title": "NN/g 用户研究方法选择",
+      "url": "https://www.nngroup.com/articles/which-ux-research-methods/",
+      "quality": "UX 研究一手研究方法解释，2026-07 复核",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S30",
+      "area": "expanded-product-management",
+      "title": "Strategyzer 商业模式画布",
+      "url": "https://www.strategyzer.com/library/the-business-model-canvas",
+      "quality": "官方画布原作者方法",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S31",
+      "area": "expanded-product-management",
+      "title": "Strategyzer 价值主张画布",
+      "url": "https://www.strategyzer.com/library/the-value-proposition-canvas",
+      "quality": "官方画布原作者方法",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S32",
+      "area": "expanded-product-management",
+      "title": "Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html?lang=en",
+      "quality": "Scrum 官方指南：Product Owner、Backlog、Product Goal",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S33",
+      "area": "expanded-product-management",
+      "title": "PMI 项目与风险管理材料",
+      "url": "https://www.pmi.org/learning/library/bringing-pmbok-guide-life-practical-8009",
+      "quality": "项目管理组织技术说明；页面为旧文章，只作框架理解",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S34",
+      "area": "expanded-product-management",
+      "title": "Atlassian 新产品开发流程",
+      "url": "https://www.atlassian.com/agile/product-management/new-product-development-process",
+      "quality": "来源解释 discovery→development→launch 迭代非严格线性",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S35",
+      "area": "expanded-product-management",
+      "title": "Atlassian 产品优先级框架",
+      "url": "https://www.atlassian.com/agile/product-management/prioritization-framework",
+      "quality": "RICE 输入和适用限制",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S36",
+      "area": "expanded-product-management",
+      "title": "Atlassian Product Operating Model",
+      "url": "https://www.atlassian.com/agile/product-management/product-operating-model",
+      "quality": "组织的产品运作、治理与责任",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S37",
+      "area": "expanded-product-management",
+      "title": "Atlassian 动态产品发现",
+      "url": "https://www.atlassian.com/agile/product-management/discovery",
+      "quality": "持续发现、Now/Next/Later 与跨团队反馈",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S38",
+      "area": "expanded-product-management",
+      "title": "NN/g UX Research Cheat Sheet",
+      "url": "https://www.nngroup.com/articles/ux-research-cheat-sheet/",
+      "quality": "从用户研究任务选用合适方法",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S39",
+      "area": "expanded-product-management",
+      "title": "phuryn/pm-skills（开源社区工具，不是权威理论）",
+      "url": "https://github.com/phuryn/pm-skills",
+      "quality": "可选 PM 工作流参考；安装前审查许可/权限/当前 SHA",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
+    },
+    {
+      "id": "S40",
+      "area": "expanded-product-management",
+      "title": "Google PAIR 六章节 AI 人机体验",
+      "url": "https://pair.withgoogle.com/guidebook-v2/chapters",
+      "quality": "官方 AI UX：需求、数据、心智模型、解释、反馈与错误",
+      "checked_on": "2026-11-14",
+      "status": "WEB_PAGE_REVIEWED_NOT_EXECUTED"
     }
   ]
 }

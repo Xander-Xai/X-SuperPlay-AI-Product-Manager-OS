@@ -1,7 +1,7 @@
 {
-  "schema": "2.0",
+  "schema": "3.0",
   "updated_on": "2026-11-14",
-  "purpose": "demand-driven, non-linear, deployable product knowledge coverage",
+  "purpose": "Complete but non-linear PM/AI Product Engineer knowledge; demand-driven routing with authoritative theory, lay analogies and source-to-practice links",
   "learning_state": "NOT_RUN",
   "topics": [
     {
@@ -1025,6 +1025,736 @@
       "evidence": "可测试公平性/可用性风险记录",
       "trigger": "AI 产品误伤用户",
       "status": "DESIGNED_NOT_RUN"
+    },
+    {
+      "id": "PM13",
+      "name": "机会解决方案树 OST",
+      "domain": "product",
+      "role": "PM",
+      "why": "Opportunity Solution Tree 用可衡量成果 Outcome 组织用户机会、候选方案和待验证假设之间的因果关系。",
+      "requires": [
+        "PM02",
+        "PM03",
+        "PM06"
+      ],
+      "resources": [
+        "S27",
+        "S28",
+        "S37"
+      ],
+      "exercise": "画一棵 1 结果→3 机会→各2方案→关键假设的树，并提出反证",
+      "evidence": "可追溯 Outcome/Opportunity/Solution/Assumption，三种不是同一层",
+      "trigger": "产品需求很多且不知道为什么做",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Opportunity Solution Tree 用可衡量成果 Outcome 组织用户机会、候选方案和待验证假设之间的因果关系。",
+      "plain": "像医生先确定要治好的症状，再找可能病因，最后比较治疗方法；不是先买药再找病。",
+      "upstream_refs": [
+        "UP05",
+        "UP15"
+      ]
+    },
+    {
+      "id": "PM14",
+      "name": "研究方法选型与三角验证",
+      "domain": "product",
+      "role": "PM",
+      "why": "按探索/评估目标，组合定性行为研究、可用性研究和定量实验，并识别抽样与观察偏差。",
+      "requires": [
+        "PM03"
+      ],
+      "resources": [
+        "S29",
+        "S38"
+      ],
+      "exercise": "同一合成现象提出访谈、观察、日志分析各能/不能回答的问题",
+      "evidence": "方法决策表、证据缺口和至少一项相反解释",
+      "trigger": "访谈和问卷结论矛盾",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "按探索/评估目标，组合定性行为研究、可用性研究和定量实验，并识别抽样与观察偏差。",
+      "plain": "想知道‘为什么不买’要看人做事、问原因；想知道‘多少人没买’才看数据，不能拿一把尺子量所有问题。",
+      "upstream_refs": [
+        "UP05"
+      ]
+    },
+    {
+      "id": "PM15",
+      "name": "OKR/Outcome/北极星对齐",
+      "domain": "product",
+      "role": "PM",
+      "why": "OKR 将目标与关键结果建立可观察的对齐关系；北极星表达长期核心用户价值，关键结果不应等同任务清单。",
+      "requires": [
+        "PM06",
+        "DATA01"
+      ],
+      "resources": [
+        "S26",
+        "S36",
+        "S03"
+      ],
+      "exercise": "把十条功能需求转换成目标、结果与可证伪指标",
+      "evidence": "结果指标、领先输入和守门指标齐全，不以工作量充成果",
+      "trigger": "Roadmap 全是功能和进度",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "OKR 将目标与关键结果建立可观察的对齐关系；北极星表达长期核心用户价值，关键结果不应等同任务清单。",
+      "plain": "目标是让顾客吃得满意，不是‘装修5面墙’；墙是行动，顾客回来才是结果。",
+      "upstream_refs": [
+        "UP01"
+      ]
+    },
+    {
+      "id": "PM16",
+      "name": "Stakeholder 利益相关者与决策权",
+      "domain": "product",
+      "role": "PM",
+      "why": "Stakeholder 管理识别使用者、买方、技术、设计、法务、运营、审批者的目标与决策权，建立可沟通的责任分工。",
+      "requires": [
+        "PM07"
+      ],
+      "resources": [
+        "S32",
+        "S36"
+      ],
+      "exercise": "绘制 6 角色影响-兴趣矩阵与可升级的责任表",
+      "evidence": "决策/执行/咨询/知会与冲突升级说明",
+      "trigger": "部门意见冲突",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Stakeholder 管理识别使用者、买方、技术、设计、法务、运营、审批者的目标与决策权，建立可沟通的责任分工。",
+      "plain": "开餐馆时顾客、厨师、财务、消防各有话语权；不明确谁拍板就会互相打架。",
+      "upstream_refs": [
+        "UP01",
+        "UP02",
+        "UP21"
+      ]
+    },
+    {
+      "id": "PM17",
+      "name": "产品交付与项目控制",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "产品交付管理通过范围、依赖、风险、验收、沟通和发布计划将持续发现转为可靠增量。",
+      "requires": [
+        "PM10"
+      ],
+      "resources": [
+        "S32",
+        "S33",
+        "S34"
+      ],
+      "exercise": "为模拟 2 周 Release 列 WBS/依赖/风险、UAT 与风险预警",
+      "evidence": "明确范围、风险责任、变更处理和实际复盘",
+      "trigger": "项目延期或频繁变更",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "产品交付管理通过范围、依赖、风险、验收、沟通和发布计划将持续发现转为可靠增量。",
+      "plain": "厨师研究新菜属于产品，按时出菜、食材不断供属于交付；不能把排期表当产品价值。",
+      "upstream_refs": [
+        "UP03",
+        "UP12",
+        "UP13"
+      ]
+    },
+    {
+      "id": "PM18",
+      "name": "Product Operating Model / 产品组织运作",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "产品运营模式规定产品目标、团队授权、决策权、发现-交付流程与反馈治理的协作系统。",
+      "requires": [
+        "PM16",
+        "PM06"
+      ],
+      "resources": [
+        "S26",
+        "S36"
+      ],
+      "exercise": "绘制产品三人组或单人多角色职责、决策与审查节奏",
+      "evidence": "发现与交付双向信息流和决策责任表",
+      "trigger": "团队功能多但交付与发现割裂",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "产品运营模式规定产品目标、团队授权、决策权、发现-交付流程与反馈治理的协作系统。",
+      "plain": "不仅有菜谱，还要规定谁试菜、谁拍板、谁上菜、谁追踪差评。",
+      "upstream_refs": [
+        "UP01",
+        "UP02"
+      ]
+    },
+    {
+      "id": "PM19",
+      "name": "市场定位和竞争差异化",
+      "domain": "product",
+      "role": "PM",
+      "why": "定位通过目标细分、竞争参照和价值差异解释为何特定用户应选择此产品。",
+      "requires": [
+        "PM05",
+        "PM04"
+      ],
+      "resources": [
+        "S31",
+        "S25"
+      ],
+      "exercise": "选择 2 类买方，做替代方案/差异对比与反证",
+      "evidence": "一句可验证定位 + 数据/访问证据分层",
+      "trigger": "功能同质化/找不到用户",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "定位通过目标细分、竞争参照和价值差异解释为何特定用户应选择此产品。",
+      "plain": "同一条街开饭馆，要先决定给谁吃、与旁边家相比为何值得走进来。",
+      "upstream_refs": [
+        "UP04",
+        "UP11"
+      ]
+    },
+    {
+      "id": "PM20",
+      "name": "用户旅程/服务蓝图",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "Customer Journey Map 描述跨触点用户体验，Service Blueprint 同时揭示前台和后台流程/交接。",
+      "requires": [
+        "PM08",
+        "PM03"
+      ],
+      "resources": [
+        "S29",
+        "S40"
+      ],
+      "exercise": "绘制前台动作、后台 API/人员、跨触点失败与恢复",
+      "evidence": "服务蓝图、可观察触点和错误恢复用例",
+      "trigger": "单个页面正常但完整任务失败",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Customer Journey Map 描述跨触点用户体验，Service Blueprint 同时揭示前台和后台流程/交接。",
+      "plain": "客人从看到招牌、点餐、支付到售后是一整趟旅程，不只是一张点单页面。",
+      "upstream_refs": [
+        "UP12"
+      ]
+    },
+    {
+      "id": "PM21",
+      "name": "平台型产品/API 产品思维",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "平台产品把内部能力以 API/组件/权限及 SLA 形式交给其他团队或第三方消费，需同时关注开发者体验和兼容成本。",
+      "requires": [
+        "ENG03",
+        "PM07"
+      ],
+      "resources": [
+        "S34",
+        "S36"
+      ],
+      "exercise": "写 API 消费者故事、版本契约、配额、失败响应与支持范围",
+      "evidence": "兼容变更、租户隔离与文档演练",
+      "trigger": "多团队要复用 AI 能力",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "平台产品把内部能力以 API/组件/权限及 SLA 形式交给其他团队或第三方消费，需同时关注开发者体验和兼容成本。",
+      "plain": "普通餐馆直接卖饭；中央厨房则要让很多店能稳定调用它的能力。",
+      "upstream_refs": [
+        "UP12",
+        "UP16"
+      ]
+    },
+    {
+      "id": "PM22",
+      "name": "Pre-mortem 预演失败和产品风险矩阵",
+      "domain": "product",
+      "role": "PM",
+      "why": "Premortem 在投入前假设项目已失败，逆向列举原因、概率/影响、应对、可检测信号和责任。",
+      "requires": [
+        "PM06",
+        "PM07"
+      ],
+      "resources": [
+        "S25",
+        "S26"
+      ],
+      "exercise": "模拟产品上线失败，列 8 个失败假设并按四大风险分类",
+      "evidence": "风险登记、观测信号、Stop/降级门槛",
+      "trigger": "做决策总是乐观估计",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Premortem 在投入前假设项目已失败，逆向列举原因、概率/影响、应对、可检测信号和责任。",
+      "plain": "开店前想象开业后差评爆炸：是选址、食材、排队还是食品安全？提前设警报。",
+      "upstream_refs": [
+        "UP13",
+        "UP17"
+      ]
+    },
+    {
+      "id": "PM23",
+      "name": "产品生命周期/停用与迁移",
+      "domain": "product",
+      "role": "PM/PE",
+      "why": "Product Lifecycle Management 关注验证、增长、成熟、衰退或停用阶段的产品投资、用户迁移与支持义务。",
+      "requires": [
+        "PM12",
+        "PM11"
+      ],
+      "resources": [
+        "S34",
+        "S26"
+      ],
+      "exercise": "制定产品停用公告、数据导出/删除、用户迁移、合同边界",
+      "evidence": "停用清单与用户影响/回滚方案",
+      "trigger": "功能过多/需要下线旧产品",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Product Lifecycle Management 关注验证、增长、成熟、衰退或停用阶段的产品投资、用户迁移与支持义务。",
+      "plain": "菜卖不动也不能突然把老顾客预付的套餐作废；停卖要通知、退款或迁移。",
+      "upstream_refs": [
+        "UP01"
+      ]
+    },
+    {
+      "id": "BIZ06",
+      "name": "ICP 与销售线索验证",
+      "domain": "business",
+      "role": "PM",
+      "why": "Ideal Customer Profile 表达有相似购买条件的客户类型，销售线索需要区分关注、询问、试点、成交与付费证据。",
+      "requires": [
+        "BIZ01",
+        "PM03"
+      ],
+      "resources": [
+        "S31",
+        "S30"
+      ],
+      "exercise": "设计 2 类 ICP 和从接触到签约的漏斗口径",
+      "evidence": "线索来源/授权/阶段/分母，未付费不冒充订单",
+      "trigger": "流量高但没有真实买家",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Ideal Customer Profile 表达有相似购买条件的客户类型，销售线索需要区分关注、询问、试点、成交与付费证据。",
+      "plain": "有人夸你菜香不等于订座，更不等于结账；先找真正有预算又急需解决问题的人。",
+      "upstream_refs": [
+        "UP04",
+        "UP06",
+        "UP07",
+        "UP22"
+      ]
+    },
+    {
+      "id": "BIZ07",
+      "name": "B2B 采购/谈判/合同交付边界",
+      "domain": "business",
+      "role": "PM",
+      "why": "企业采购涉及使用方/决策方/采购/法务/财务的多方流程、试点要求、验收/合同风险与总拥有成本。",
+      "requires": [
+        "BIZ06",
+        "PM16"
+      ],
+      "resources": [
+        "S33",
+        "S36"
+      ],
+      "exercise": "模拟采购角色链、POC 目标、里程碑验收与变更争议",
+      "evidence": "无敏感信息的 RACI、验收和升级流程",
+      "trigger": "企业客户问法务/SLA/POC",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "企业采购涉及使用方/决策方/采购/法务/财务的多方流程、试点要求、验收/合同风险与总拥有成本。",
+      "plain": "顾客喜欢菜，不等于餐饮集团采购会签合同；还得过预算、食安、发票和合同。",
+      "upstream_refs": [
+        "UP11",
+        "UP21"
+      ]
+    },
+    {
+      "id": "BIZ08",
+      "name": "商业模式画布 BMC/价值主张 VPC",
+      "domain": "business",
+      "role": "PM",
+      "why": "Business Model Canvas 用九要素描述如何创造、交付、获取价值；Value Proposition Canvas 对齐 Customer Jobs/Pains/Gains 与产品价值。",
+      "requires": [
+        "PM05",
+        "BIZ01"
+      ],
+      "resources": [
+        "S30",
+        "S31"
+      ],
+      "exercise": "用两个不同客户群画出 BMC/VPC 并标核心未知",
+      "evidence": "假设矩阵和可推翻商业模式的试验",
+      "trigger": "方向好像可行但说不清商业逻辑",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Business Model Canvas 用九要素描述如何创造、交付、获取价值；Value Proposition Canvas 对齐 Customer Jobs/Pains/Gains 与产品价值。",
+      "plain": "一张画布把谁来吃、卖什么、怎么获客、食材成本、怎样赚钱放同一桌上比较。",
+      "upstream_refs": [
+        "UP04",
+        "UP08",
+        "UP15"
+      ]
+    },
+    {
+      "id": "BIZ09",
+      "name": "经营财务/现金流/预算预测",
+      "domain": "business",
+      "role": "PM",
+      "why": "现金流是现金实际进出的时间分布，区别于利润和贡献毛利；预算和现金缓冲约束产品投资节奏。",
+      "requires": [
+        "BIZ02"
+      ],
+      "resources": [
+        "S30",
+        "S33"
+      ],
+      "exercise": "用合成账单按月模拟回款延迟、退款与服务器成本翻倍",
+      "evidence": "现金流表、情景敏感性、停止预算门槛",
+      "trigger": "做得越多现金越紧",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "现金流是现金实际进出的时间分布，区别于利润和贡献毛利；预算和现金缓冲约束产品投资节奏。",
+      "plain": "饭馆账面赚钱，但供应商今天要付款、平台下月才结算，现金仍可能断。",
+      "upstream_refs": [
+        "UP08",
+        "UP10",
+        "UP19"
+      ]
+    },
+    {
+      "id": "BIZ10",
+      "name": "GTM 上市/渠道与营销销售协同",
+      "domain": "business",
+      "role": "PM",
+      "why": "Go-to-Market 协同定位、定价、渠道、营销、销售、客户成功与上市指标，需区分获客与任务价值。",
+      "requires": [
+        "BIZ06",
+        "BIZ04"
+      ],
+      "resources": [
+        "S34",
+        "S37"
+      ],
+      "exercise": "设计一个低成本 GTM 假设：渠道→激活→试用→保留",
+      "evidence": "渠道漏斗指标与真实/合成证据分层",
+      "trigger": "产品上线但无人知晓",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Go-to-Market 协同定位、定价、渠道、营销、销售、客户成功与上市指标，需区分获客与任务价值。",
+      "plain": "菜做得好不意味着路人知道；要告诉对的人、给试吃路径、回看是否复购。",
+      "upstream_refs": [
+        "UP06",
+        "UP07",
+        "UP18"
+      ]
+    },
+    {
+      "id": "BIZ11",
+      "name": "定价研究与收费实验",
+      "domain": "business",
+      "role": "PM",
+      "why": "定价策略区分计价单位、价值捕获、支付意愿证据、价格实验、合同限制及边际成本。",
+      "requires": [
+        "BIZ01",
+        "DATA03"
+      ],
+      "resources": [
+        "S30",
+        "S31"
+      ],
+      "exercise": "比较席位/按任务/订阅套餐，制定可逆的价格验证协议",
+      "evidence": "价格假设来源、退款/毛利与真实付费分离",
+      "trigger": "不会决定按席位还是按调用收费",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "定价策略区分计价单位、价值捕获、支付意愿证据、价格实验、合同限制及边际成本。",
+      "plain": "饭馆是按位收费、按菜收费还是套餐？先看顾客买的价值和实际成本，不靠拍脑袋。",
+      "upstream_refs": [
+        "UP07",
+        "UP19"
+      ]
+    },
+    {
+      "id": "BIZ12",
+      "name": "SaaS 订阅产品规则/生命周期",
+      "domain": "business",
+      "role": "PM/PE",
+      "why": "订阅产品管理涉及配额、升级降级、试用、账单周期、续费、取消、退款、权限与数据留存协同。",
+      "requires": [
+        "BIZ03",
+        "BIZ09"
+      ],
+      "resources": [
+        "S30",
+        "S34"
+      ],
+      "exercise": "一份含重复 webhook/配额/取消/退款的产品规则与测试",
+      "evidence": "规则状态机、权责边界和未授权操作拒绝",
+      "trigger": "设计 AI SaaS 付费套餐",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "订阅产品管理涉及配额、升级降级、试用、账单周期、续费、取消、退款、权限与数据留存协同。",
+      "plain": "月卡买了却被重复扣费、取消后数据没处理，就是产品规则和工程没连起来。",
+      "upstream_refs": [
+        "UP12",
+        "UP08"
+      ]
+    },
+    {
+      "id": "MGT01",
+      "name": "战略与资源配置管理",
+      "domain": "management",
+      "role": "PM",
+      "why": "战略管理是在资源约束下选择竞争方向、投资重点、机会成本和阶段目标，持续拒绝低价值事项。",
+      "requires": [
+        "PM06",
+        "BIZ08"
+      ],
+      "resources": [
+        "S26",
+        "S36"
+      ],
+      "exercise": "预算减半下重排 3 条路线，写出不做理由",
+      "evidence": "决策来源、成本、反证、复核日期",
+      "trigger": "要在多个业务方向取舍",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "战略管理是在资源约束下选择竞争方向、投资重点、机会成本和阶段目标，持续拒绝低价值事项。",
+      "plain": "你只有一台炉灶，什么菜先做、什么菜不卖，比把菜单写满更重要。",
+      "upstream_refs": [
+        "UP01",
+        "UP02",
+        "UP20"
+      ]
+    },
+    {
+      "id": "MGT02",
+      "name": "项目与风险管理",
+      "domain": "management",
+      "role": "PM/PE",
+      "why": "项目管理围绕具体目标的范围、进度、成本、质量、风险、依赖和干系人协调，不等于产品发现。",
+      "requires": [
+        "PM17"
+      ],
+      "resources": [
+        "S33",
+        "S32"
+      ],
+      "exercise": "列 RACI/风险登记/里程碑/验收及变更示例",
+      "evidence": "范围变更与风险响应演练",
+      "trigger": "项目延期/跨团队冲突",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "项目管理围绕具体目标的范围、进度、成本、质量、风险、依赖和干系人协调，不等于产品发现。",
+      "plain": "菜单好不好是产品问题；订单能否安全、准时送到是项目问题。",
+      "upstream_refs": [
+        "UP01",
+        "UP03",
+        "UP14"
+      ]
+    },
+    {
+      "id": "MGT03",
+      "name": "组织协作/角色与委派",
+      "domain": "management",
+      "role": "PM",
+      "why": "跨职能协作使用明确决策权、授权、激励、反馈和升级机制，人员管理只有真实团队触发时深入。",
+      "requires": [
+        "PM16",
+        "MGT02"
+      ],
+      "resources": [
+        "S26",
+        "S36"
+      ],
+      "exercise": "模拟冲突：设计、技术、销售在上线前争议权衡",
+      "evidence": "职责矩阵、升级条件和沟通脚本",
+      "trigger": "多人协作后职责不清",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "跨职能协作使用明确决策权、授权、激励、反馈和升级机制，人员管理只有真实团队触发时深入。",
+      "plain": "主厨、服务员、采购要配合，没人负责收尾就会反复漏单。",
+      "upstream_refs": [
+        "UP01",
+        "UP14",
+        "UP21"
+      ]
+    },
+    {
+      "id": "MGT04",
+      "name": "流程治理/标准化与风险",
+      "domain": "management",
+      "role": "PM/PE",
+      "why": "Product Ops/流程治理建立重复可靠的决策日志、发布审批、变更、异常与风险响应制度。",
+      "requires": [
+        "PM10",
+        "ENG10"
+      ],
+      "resources": [
+        "S36",
+        "S33"
+      ],
+      "exercise": "从一次合成事故写 SOP、监控信号、回滚/审批",
+      "evidence": "根因、控制点、责任与复测规则",
+      "trigger": "同样错误反复发生",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Product Ops/流程治理建立重复可靠的决策日志、发布审批、变更、异常与风险响应制度。",
+      "plain": "厨房不是多请个厨师就能稳定，备料、卫生、交接的 SOP 决定不出事故。",
+      "upstream_refs": [
+        "UP01",
+        "UP02"
+      ]
+    },
+    {
+      "id": "MGT05",
+      "name": "管理决策复盘与人机共练",
+      "domain": "management",
+      "role": "PM",
+      "why": "Decision Review 通过记录当时证据、备选、概率、停止阈值和事后结果进行校准，避免事后诸葛亮。",
+      "requires": [
+        "MGT01",
+        "COG01"
+      ],
+      "resources": [
+        "S25",
+        "S26"
+      ],
+      "exercise": "写一份决策日志，用 AI 反方质疑后关闭 AI 做新案例",
+      "evidence": "原始预测、到期核验、人审与反证",
+      "trigger": "每次复盘都无法说明变好原因",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Decision Review 通过记录当时证据、备选、概率、停止阈值和事后结果进行校准，避免事后诸葛亮。",
+      "plain": "当初为什么选这道菜，为什么后来卖得好？要拿当时的预测对照现实，不凭印象。",
+      "upstream_refs": [
+        "UP03",
+        "UP09",
+        "UP20"
+      ]
+    },
+    {
+      "id": "COG01",
+      "name": "证据等级/预测校准",
+      "domain": "cognition",
+      "role": "PM",
+      "why": "Evidence Calibration 将可观察事实、推断、猜测及预测概率分离，用结果反馈改进决策可靠性。",
+      "requires": [
+        "PM03"
+      ],
+      "resources": [
+        "S27",
+        "S25"
+      ],
+      "exercise": "对 10 个可判定判断写概率、来源和截止日",
+      "evidence": "预测与结果分离、校准复盘与未知标记",
+      "trigger": "容易把热度当真实需求",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Evidence Calibration 将可观察事实、推断、猜测及预测概率分离，用结果反馈改进决策可靠性。",
+      "plain": "朋友说‘肯定大卖’不是销售数据；先记‘我有多大把握’，到期再看有没有猜对。",
+      "upstream_refs": [
+        "UP05",
+        "UP09"
+      ]
+    },
+    {
+      "id": "COG02",
+      "name": "系统思维/因果与反馈环",
+      "domain": "cognition",
+      "role": "PM",
+      "why": "Systems Thinking 把变量、延迟、约束和反馈循环放入因果假设图，区分相关与因果。",
+      "requires": [
+        "DATA03",
+        "PM06"
+      ],
+      "resources": [
+        "S27",
+        "S34"
+      ],
+      "exercise": "画获客→成本→服务→满意→留存的因果与反作用图",
+      "evidence": "至少两个替代解释和干预/观察计划",
+      "trigger": "单个指标好但整体变差",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Systems Thinking 把变量、延迟、约束和反馈循环放入因果假设图，区分相关与因果。",
+      "plain": "打折后客流涨，可能利润却降；不能只盯‘客流’一个表盘。",
+      "upstream_refs": [
+        "UP09"
+      ]
+    },
+    {
+      "id": "COG03",
+      "name": "认知偏差/反事实与决策质量",
+      "domain": "cognition",
+      "role": "PM",
+      "why": "Cognitive Bias 管理关注确认偏误、幸存者偏差、沉没成本与可得性等如何扭曲研究与产品选择。",
+      "requires": [
+        "COG01"
+      ],
+      "resources": [
+        "S25",
+        "S29"
+      ],
+      "exercise": "给案例找三种反证、陌生人群/成本情景",
+      "evidence": "明确偏差、反事实和可改变结论的证据",
+      "trigger": "做错了还想投入更多",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Cognitive Bias 管理关注确认偏误、幸存者偏差、沉没成本与可得性等如何扭曲研究与产品选择。",
+      "plain": "只问爱吃辣的熟人，就以为全城都爱辣；已经买了锅也不是继续赔钱的理由。",
+      "upstream_refs": [
+        "UP09",
+        "UP05"
+      ]
+    },
+    {
+      "id": "DATA04",
+      "name": "增长飞轮/渠道/留存生命周期",
+      "domain": "data",
+      "role": "PM",
+      "why": "Growth Loop 将每次成功的用户体验、分发、获取与再参与形成反馈链，且需有真实转化与持续价值证据。",
+      "requires": [
+        "DATA02",
+        "BIZ04"
+      ],
+      "resources": [
+        "S34",
+        "S37"
+      ],
+      "exercise": "画一个渠道→激活→成功→推荐→新客户的闭环并找断点",
+      "evidence": "事件/时间窗/分母、自然回访与人工推动分开",
+      "trigger": "曝光高但不留存",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "Growth Loop 将每次成功的用户体验、分发、获取与再参与形成反馈链，且需有真实转化与持续价值证据。",
+      "plain": "老客愿意分享才可能带来新客，狂发传单只能算曝光，不能算餐馆的口碑飞轮。",
+      "upstream_refs": [
+        "UP06",
+        "UP07",
+        "UP18"
+      ]
+    },
+    {
+      "id": "GO01",
+      "name": "行业知识/采购/政策约束",
+      "domain": "governance",
+      "role": "PM",
+      "why": "行业产品管理需要理解领域工作流、购买流程、监管边界和机构激励，不能把通用互联网增长经验机械照搬。",
+      "requires": [
+        "PM05",
+        "BIZ07"
+      ],
+      "resources": [
+        "S33",
+        "S36"
+      ],
+      "exercise": "针对指定行业列使用者/采购者/数据许可/验收规则",
+      "evidence": "可溯源规则与专家复核需求，未知不猜",
+      "trigger": "做政企/行业 AI 产品",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "行业产品管理需要理解领域工作流、购买流程、监管边界和机构激励，不能把通用互联网增长经验机械照搬。",
+      "plain": "学校、医院、企业食堂都有不同审批和安全规矩，同样一道菜不能同样卖。",
+      "upstream_refs": [
+        "UP11",
+        "UP07"
+      ]
+    },
+    {
+      "id": "GO02",
+      "name": "合同/知识产权/AI 数据治理责任",
+      "domain": "governance",
+      "role": "PM/PE",
+      "why": "上市和商业交付需要对数据许可、IP、保留/删除、合同交付、审计与责任划分进行风险核查。",
+      "requires": [
+        "OPS05",
+        "MGT04"
+      ],
+      "resources": [
+        "S07",
+        "S08"
+      ],
+      "exercise": "建立数据流、保留/删除、来源许可、第三方责任与升级审查",
+      "evidence": "拒绝无权数据使用、人工专业审查、审计链",
+      "trigger": "客户要求上传私有数据/跨区部署",
+      "status": "DESIGNED_NOT_RUN",
+      "definition": "上市和商业交付需要对数据许可、IP、保留/删除、合同交付、审计与责任划分进行风险核查。",
+      "plain": "把顾客资料交给未经授权的外包厨师，即使菜做得好也可能出事。",
+      "upstream_refs": [
+        "UP11",
+        "UP12",
+        "UP17"
+      ]
     }
   ]
 }

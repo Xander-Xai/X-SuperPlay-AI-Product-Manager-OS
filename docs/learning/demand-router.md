@@ -1,5 +1,7 @@
 # 按需学习路由：不会哪里学哪里
 
+**阅读法**：[专业定义/餐馆类比](../atlas/product-manager-primer.md) + [四张知识关系图](../atlas/product-lifecycle-mermaid.md) + [从点到面 SOP](point-to-system-method.md)；需要时查看 [上游学习资料链接](../../resources/upstream-pm-knowledge-index.md)。
+
 ## 最小路由（每次只挑一个主 Gap）
 
 1. **写下当前任务或失败**：现象、期望行为、失败代价、来源、授权、真实/合成证据、截止期、可接受成本。

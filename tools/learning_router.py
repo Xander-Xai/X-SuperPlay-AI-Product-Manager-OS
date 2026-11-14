@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "docs/atlas/knowledge-catalog.json"
 SOURCES = ROOT / "resources/authorities.json"
 SCENARIOS = ROOT / "docs/scenarios/scenarios.json"
+UPSTREAM = ROOT / "resources/upstream-pm-knowledge-index.json"
 
 def read():
     topics = json.loads(DATA.read_text(encoding="utf-8"))["topics"]
@@ -67,6 +68,8 @@ def route(key, deep=False):
         t=by[i]
         print(f"[{i}] {t['name']} {'<-- TARGET' if i==key else '<-- concept prerequisite'}")
         print("  Why:", t["why"])
+        if t.get("definition"): print("  Definition:", t["definition"])
+        if t.get("plain"): print("  Plain language:", t["plain"])
         print("  Trigger:", t["trigger"])
         print("  Dependencies:", ", ".join(t["requires"]) or "none")
         print("  Experiment:", t["exercise"])
@@ -74,6 +77,10 @@ def route(key, deep=False):
         for sid in t["resources"]:
             s=src[sid]
             print("  Source:", sid, s["title"], s["url"])
+    refs = json.loads(UPSTREAM.read_text(encoding="utf-8"))["references"]
+    for ref in refs:
+        if key in ref["target_ids"]:
+            print("  Private upstream reference:", ref["id"], ref["area"], ref["url"], "(requires access)")
     return chosen
 
 def main(argv=None):

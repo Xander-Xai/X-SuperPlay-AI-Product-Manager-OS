@@ -1,7 +1,35 @@
 # AI Product Manager × AI Product Engineer：全景知识 Roadmap（需求驱动版）
 
-> **v0.2.0 · 2026-11-14 · CURRICULUM_DESIGNED / PRACTICE_NOT_RUN / HUMAN_UNASSESSED**  
+> **v0.3.0 · 2026-11-14 · CURRICULUM_DESIGNED / PRACTICE_NOT_RUN / HUMAN_UNASSESSED**  
 > **全景知识关系是稳定地图，不是强制学习顺序。学习顺序由实际问题、风险与缺口动态选择。** 12 周/30-60-90 天只作为可选复盘节奏，不再是先修关卡。
+
+## 本轮 V3 拓展：从产品经理知识链到专业原理与大白话
+
+> **它不是新课表。** 全景相当于地铁图，某个卡点则是今天要去的站。上游 AI Learning OS 中分散的管理、营销、销售、Founder、财务、经营、认知、行业、SaaS 资料均纳入索引，并映射到各自的产品决策节点。**原私仓资料链接需要访问权限，不复制正文。**
+
+- [四张 Mermaid 产品链路/风险/知识依赖/按需学习图](docs/atlas/product-lifecycle-mermaid.md)
+- [专业术语 × 餐馆类比 × 何时使用（26 个核心概念）](docs/atlas/product-manager-primer.md)
+- [全景知识卡：新增 29 项，约 84 个知识节点](docs/atlas/knowledge-handbook.md)
+- [上游 22 组具体资料精确链接](resources/upstream-pm-knowledge-index.md) 与 [公共权威来源索引](resources/official-resources.md)
+- [AI 时代以点带面学习 SOP](docs/learning/point-to-system-method.md)
+- [8 道真实上线门禁与交付实训](docs/launch/production-apprenticeship.md)
+
+### 产品管理完整关系环：一张思维表
+
+| 脑中应该知道的环节 | 专业说法 | 大白话 | 知识切入点 | 权威资料 |
+|---|---|---|---|---|
+| 为什么有人需要 | Product Discovery / JTBD / OST | 先找顾客的真实饥饿与痛点 | PM02、PM03、PM13 | [Product Talk](https://www.producttalk.org/getting-started-with-discovery/) |
+| 选择谁、凭什么赢 | Strategy / Segment / Value Proposition | 决定卖给谁、怎样比隔壁家更值 | PM05、PM19、BIZ08 | [Strategyzer VPC](https://www.strategyzer.com/library/the-value-proposition-canvas) |
+| 做什么、不做什么 | Outcome / Roadmap / OKR | 菜单先做哪道，哪道不做 | PM06、PM15、PM22 | [SVPG](https://www.svpg.com/product-management-an-introduction/) |
+| 怎样让人能顺利使用 | PRD / UX / Service Blueprint | 菜谱/点单/后厨对接、不让顾客卡住 | PM07、PM20 | [NN/g](https://www.nngroup.com/articles/which-ux-research-methods/) |
+| 方案真能安全落地吗 | Delivery / Feasibility / AI Eval | 厨房能稳定出餐，不错单、不串单 | PM17、AI11、ENG06、OPS06 | [PAIR](https://pair.withgoogle.com/guidebook-v2/chapters) |
+| 为什么有人付钱且可持续 | Buyer / ICP / Pricing / Cash Flow | 谁结账、每单能否挣钱、现金是否够周转 | BIZ06、BIZ08、BIZ09、BIZ11 | [Business Model Canvas](https://www.strategyzer.com/library/the-business-model-canvas) |
+| 如何长期运营与协作 | Product Operating Model / Governance | 老板、厨师、采购、服务员知道责任 | PM18、MGT01–MGT05、GO02 | [SVPG Product Model](https://www.svpg.com/the-product-operating-model-an-introduction/) |
+| 如何判断效果与改进 | Metrics / Experiments / Learning Loops | 看顾客是否回头，而不是只统计发了多少传单 | DATA01–DATA04、COG01–COG03 | [Atlassian](https://www.atlassian.com/agile/product-management/new-product-development-process) |
+
+**注意**：它们是相互影响的系统而不是严格从左到右的一次性阶段。用户需求改变，会同时影响设计、技术选型、价格、指标与运营；项目失败后反向学习需要的知识，而不是从第一章重来。
+
+---
 
 ## 一、三层操作模型
 
