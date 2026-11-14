@@ -64,3 +64,5 @@ python tools/learning_router.py validate
 [跨仓索引与源知识桥](resources/upstream-downstream-index.md) · [从上游迁移的来源记录](resources/source-migration-map.md) · [治理协议](GOVERNANCE.md) · [知识库维护准则](CONTRIBUTING.md)。
 
 **Public 仓库：严禁提交私密 JD、简历、客户/合同/订单、个人信息与密钥。**
+
+**一致性自动验收**：`python tools/learning_router.py validate` 检查所有节点对应的 18 个基础能力域和资料别名；`python -m unittest discover -s tools -p 'test_*.py' -v` 检查知识索引；`python -m unittest discover -s labs -p 'test_*.py' -v` 检查合成实操。通过仅证明课程索引与可重复演示，不代表任何业务上线或本人考试通过。

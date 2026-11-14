@@ -43,3 +43,7 @@ python tools/learning_router.py validate
 ## 与上游的精确分工
 
 本仓决定 **学什么、为解决哪个产品/交付问题、验收什么**。复杂技术原理（LLM 预/后训练、RAG 深度原理、LangGraph、Context/Harness）以 [上游 AI Learning OS](../../resources/upstream-downstream-index.md) 为专题权威。这里不复制用户私有职业/商业资料。
+
+## 产品经理基础补缺快捷表
+
+[按真实问题选知识](product-foundations-task-router.md) 提供市场规模、问卷抽样、用户研究授权、MVP/POC、Scrum Backlog/DoD、研究数据、用户激活、A/B 统计、产品发布与支持等入口。上游基础资料已链接，非必修课程表。若遇到越权/隐私、账务或数据丢失等硬门禁，优先处理安全与责任，不以“尚未学到这一章”为由放行。
